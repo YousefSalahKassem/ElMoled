@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:text="Victor Flexin"
+        android:id="@+id/name"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progressTint="@color/gold"
+            android:secondaryProgressTint="@color/gold"
+            android:scaleX="0.5"
+            android:scaleY=".5"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="30sp"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:isIndicator="true"
+            android:id="@+id/reviewraiting"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="23 September 2019"
+            android:id="@+id/date"/>
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:layout_marginLeft="30sp"
+    android:layout_marginRight="30sp"
+    android:id="@+id/comment"
+    android:text="The dial on this timepiece is extremely unique, as it is a concentric circular pattern that is covered by sturdy sapphire glass."/>
+</LinearLayout>

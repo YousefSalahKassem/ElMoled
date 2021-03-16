@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notification"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp"
+/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+android:layout_marginTop="30sp"
+        android:layout_marginLeft="20sp"
+        android:text="your item is on sale"
+        android:id="@+id/messagenotification"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time"
+                android:layout_marginLeft="20sp"
+
+                android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#494646"
+        android:gravity="center"
+        android:layout_marginLeft="5sp"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:text="just now"
+        android:id="@+id/time"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+       android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_height="2sp"
+        android:background="#534E4E"/>
+
+</LinearLayout>

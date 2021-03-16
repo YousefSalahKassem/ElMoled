@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+    <item
+
+        android:id="@+id/notification"
+        android:title="Notfication"
+        android:checkable="true"
+        android:icon="@drawable/notificat"
+        android:iconTint="@drawable/checked"
+        />
+
+    <item
+        android:id="@+id/history"
+        android:title="Order History"
+        android:icon="@drawable/shop"
+        android:iconTint="@drawable/checked"
+        />
+    <item
+        android:id="@+id/myaddress"
+        android:title="My Addresses"
+        android:icon="@drawable/address"
+        android:iconTint="@drawable/checked"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        android:iconTint="@drawable/checked"
+        />
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        android:iconTint="@drawable/checked"
+        />
+</group>
+</menu>

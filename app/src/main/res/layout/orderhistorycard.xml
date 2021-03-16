@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30sp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order"
+        android:textSize="20sp"
+        android:textColor="#716F6F"
+        android:text="ORDER#21412"
+        android:paddingStart="30sp"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30sp"
+            android:text="Placed On:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/placedon"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30sp"
+            android:text="Placed On:"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30sp"
+            android:text="Amount:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:id="@+id/amount"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30sp"
+            android:text="Placed On:"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30sp"
+            android:text="Status:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:id="@+id/status"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30sp"
+            android:text="Placed On:"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_height="2sp"
+        android:background="#90ACA8A8"/>
+</LinearLayout>

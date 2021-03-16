@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/corner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/productDetailsName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20sp"
+                        android:gravity="center"
+                        android:text=" Basic hoodie \nwith a rubberised patch"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="50sp"
+                        android:layout_gravity="center"
+                        android:focusableInTouchMode="false"
+                        android:isIndicator="true"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="0dp"
+                        android:numStars="5"
+                        android:progressTint="@color/purple_500"
+                        android:secondaryProgressTint="@color/purple_500"
+                        android:stepSize="0.5" />
+
+                    <TextView
+                        android:id="@+id/productDetailsPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:gravity="center"
+                        android:text="EGP 300.00"
+                        android:textColor="#FF0000"
+                        android:textSize="25sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/sizes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="50sp" >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="20sp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From:"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/productDetailsBrand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:text="PULL&amp;BEAR"
+                            android:textColor="#FA0000"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="50sp"
+                            android:layout_marginRight="20sp"
+                            android:text="Color" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/mytabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Description" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/reviews"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Reviews" />
+                    </com.google.android.material.tabs.TabLayout>
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/mypaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="420sp"
+                         />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+android:layout_marginBottom="20sp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mybookmark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/mybookmark" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40sp"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginLeft="15sp"
+                            android:backgroundTint="#FF0000"
+                            app:cardCornerRadius="20sp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:tint="#FF0000" />
+
+
+                                <TextView
+                                    android:id="@+id/textView25"
+                                    android:layout_width="200sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:outlineProvider="none"
+                                    android:text="ADD TO CART"
+                                    android:textColor="#fff"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:src="@drawable/sharee" />
+                    </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+</LinearLayout>

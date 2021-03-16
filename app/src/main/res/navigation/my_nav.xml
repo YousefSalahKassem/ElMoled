@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.elmoledmol.www.homefragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_homefragment" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.elmoledmol.www.categoreyfragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categoreyfragment" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.elmoledmol.www.shopfragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shopfragment" />
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.elmoledmol.www.bookmarksfragment"
+        android:label="fragment_bookmarks"
+        tools:layout="@layout/fragment_bookmarksfragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.elmoledmol.www.settingfragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settingfragment" />
+    <fragment
+        android:id="@+id/onsale"
+        android:name="com.elmoledmol.www.onsale"
+        android:label="fragment_onsale"
+        tools:layout="@layout/fragment_onsale" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.elmoledmol.www.notificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/orderhistoryFragment"
+        android:name="com.elmoledmol.www.orderhistoryFragment"
+        android:label="fragment_orderhistory"
+        tools:layout="@layout/fragment_orderhistory" />
+    <fragment
+        android:id="@+id/adressfragment2"
+        android:name="com.elmoledmol.www.adressfragment"
+        android:label="fragment_adressfragment"
+        tools:layout="@layout/fragment_adressfragment" />
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.elmoledmol.www.AddAddressFragment"
+        android:label="fragment_add_address"
+        tools:layout="@layout/fragment_add_address" />
+    <fragment
+        android:id="@+id/moresettings"
+        android:name="com.elmoledmol.www.moresettings"
+        android:label="fragment_moresettings"
+        tools:layout="@layout/fragment_moresettings" />
+
+    <fragment
+        android:id="@+id/description2"
+        android:name="com.elmoledmol.www.Description"
+        android:label="fragment_description"
+        tools:layout="@layout/fragment_description" />
+    <fragment
+        android:id="@+id/reviews2"
+        android:name="com.elmoledmol.www.reviews"
+        android:label="fragment_reviews"
+        tools:layout="@layout/fragment_reviews" />
+
+
+</navigation>

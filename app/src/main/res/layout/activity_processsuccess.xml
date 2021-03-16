@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".processsuccess">
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress"-->
+<!--        style="?android:attr/progressBarStyleLargeInverse"-->
+<!--        android:indeterminateTint="@color/purple_500"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical|center_horizontal"-->
+<!--         />-->
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/success"
+    android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:text="Order placed"
+        android:layout_marginTop="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Your order #212423 was placed with success.\nYou can see the status of the order at any time."
+        android:layout_marginTop="10sp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="#FF0000"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="10sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tint="#FF0000" />
+
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:outlineProvider="none"
+                android:text="See order status"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#F2A0A0"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="10sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tint="#FF0000" />
+
+
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:outlineProvider="none"
+                android:text="CLOSE"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

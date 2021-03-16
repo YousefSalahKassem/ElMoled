@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+android:orientation="vertical"
+    tools:context=".productInformation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:background="#FFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10sp"
+            android:src="@drawable/abc_vector_test"
+            app:tint="@color/black"
+            android:id="@+id/backProductInfo"/>
+
+        <TextView
+            android:id="@+id/bookmarksTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Product Details"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+
+
+
+    </LinearLayout>
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="bottom"
+        app:umanoClipPanel="false"
+        app:umanoOverlay="true"
+        app:umanoShadowHeight="42dp">
+
+    <include
+        layout="@layout/productphoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <include
+        android:id="@+id/mylayout"
+        layout="@layout/productdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+</LinearLayout>
