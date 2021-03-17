@@ -43,6 +43,7 @@
                     android:layout_width="110sp"
                     android:layout_height="40sp"
                     android:layout_gravity="center"
+                    android:layout_marginRight="20sp"
                     android:layout_marginTop="10sp"
                     android:layout_marginBottom="10sp"
                     app:cardBackgroundColor="#000000"
@@ -86,7 +87,7 @@
                     android:layout_width="110sp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="5sp"
+                    android:layout_marginLeft="20sp"
                     android:layout_marginTop="10sp"
                     android:layout_marginBottom="10sp"
                     app:cardBackgroundColor="#000000"
@@ -127,48 +128,6 @@
 
 
                 -
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/foryou"
-                    android:layout_width="110sp"
-                    android:layout_height="40sp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="5sp"
-                    android:layout_marginTop="10sp"
-                    android:layout_marginBottom="10sp"
-                    app:cardBackgroundColor="#000000"
-                    app:cardCornerRadius="10sp"
-                    app:cardElevation="10sp">
-
-
-                    -
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView7"
-                            android:layout_width="0sp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:padding="3sp"
-                            android:src="@drawable/for_you"
-                            app:tint="#FFFFFF" />
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:text="For you"
-                            android:textColor="#FFFFFF" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -316,16 +275,6 @@
                     android:textColor="#000000"
                     android:textSize="24sp" />
 
-                <TextView
-                    android:id="@+id/seeAllSearchBy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:paddingRight="20sp"
-                    android:text="See all >>"
-                    android:textColor="#FFDA1E1E" />
 
             </LinearLayout>
 

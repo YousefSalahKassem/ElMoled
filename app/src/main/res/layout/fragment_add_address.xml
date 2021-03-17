@@ -100,7 +100,7 @@
                         android:layout_marginTop="5sp"
                         android:layout_marginRight="30sp"
                         android:backgroundTint="#CDCDCD"
-
+                        android:imeOptions="actionDone"
                         android:ems="10"
                         android:hint="Address Line 2"
                         android:inputType="textCapSentences|textMultiLine" />

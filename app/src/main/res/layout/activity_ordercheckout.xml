@@ -143,6 +143,7 @@
                         android:layout_marginLeft="30sp"
                         android:layout_marginTop="20sp"
                         android:layout_marginRight="30sp"
+                        android:imeOptions="actionDone"
                         android:fontFamily="@font/avenir"
                         android:inputType="phone"
                         android:textColor="#000"

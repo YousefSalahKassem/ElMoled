@@ -19,10 +19,9 @@
 
             <ImageView
                 android:id="@+id/imageView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40sp"
-                android:layout_marginBottom="40sp"
+                android:layout_width="400px"
+                android:layout_height="600px"
+                android:layout_marginBottom="20sp"
                 app:srcCompat="@drawable/brand1" />
 
             <TextView

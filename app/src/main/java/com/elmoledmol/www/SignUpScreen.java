@@ -1,6 +1,7 @@
 package com.elmoledmol.www;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -84,9 +85,9 @@ ImageView back;
                    @Override
                    public void onResponse(Call<ResponseBody> call, retrofit2.Response<ResponseBody> response) {
                        if(response.body() != null) {
-                           String s = response.message();
-                           Toast.makeText(getActivity(), s, Toast.LENGTH_SHORT).show();
-                           System.out.println(s+response.message());
+                           Toast.makeText(getActivity(), "Successfully Sign Up !", Toast.LENGTH_SHORT).show();
+                           viewPager.setCurrentItem(4);
+
                        }
                        else {
                            String s = response.message();

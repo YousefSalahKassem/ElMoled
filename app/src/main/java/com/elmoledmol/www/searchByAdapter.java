@@ -1,6 +1,7 @@
 package com.elmoledmol.www;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -41,6 +43,11 @@ public class searchByAdapter extends RecyclerView.Adapter<searchByAdapter.ViewHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle bundle=new Bundle();
+                bundle.putInt("id", list.get(position).getBrandid());
+                bundle.putString("name",list.get(position).getProduct());
+                bundle.putInt("from home",2);
+
 
             }
         });

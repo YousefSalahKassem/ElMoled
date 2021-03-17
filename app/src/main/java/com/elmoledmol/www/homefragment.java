@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -69,7 +70,7 @@ public class homefragment extends Fragment {
         newa.setText("New Arrivals");
         tops.setText("Top deals");
         feature.setText("Featured");
-        brand.setText("Search by");
+        brand.setText("Search by brand");
 
         list = new ArrayList<>();
         list2 = new ArrayList<>();
@@ -77,6 +78,7 @@ public class homefragment extends Fragment {
         list4 = new ArrayList<>();
         list5 = new ArrayList<>();
         list6 = new ArrayList<>();
+
 
 
         // Request responsible for news available.
@@ -121,53 +123,7 @@ public class homefragment extends Fragment {
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            }) {
-                @Override
-                protected Response<JSONArray> parseNetworkResponse(NetworkResponse response) {
-                    try {
-                        Cache.Entry cacheEntry = HttpHeaderParser.parseCacheHeaders(response);
-                        if (cacheEntry == null) {
-                            cacheEntry = new Cache.Entry();
-                        }
-                        final long cacheHitButRefreshed = 3 * 60 * 1000; // in 3 minutes cache will be hit, but also refreshed on background
-                        final long cacheExpired = 24 * 60 * 60 * 1000; // in 24 hours this cache entry expires completely
-                        long now = System.currentTimeMillis();
-                        final long softExpire = now + cacheHitButRefreshed;
-                        final long ttl = now + cacheExpired;
-                        cacheEntry.data = response.data;
-                        cacheEntry.softTtl = softExpire;
-                        cacheEntry.ttl = ttl;
-                        String headerValue;
-                        headerValue = response.headers.get("Date");
-                        if (headerValue != null) {
-                            cacheEntry.serverDate = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        headerValue = response.headers.get("Last-Modified");
-                        if (headerValue != null) {
-                            cacheEntry.lastModified = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        cacheEntry.responseHeaders = response.headers;
-                        final String jsonString = new String(response.data,
-                                HttpHeaderParser.parseCharset(response.headers));
-                        return Response.success(new JSONArray(jsonString), cacheEntry);
-                    } catch (UnsupportedEncodingException e) {
-                        return Response.error(new ParseError(e));
-                    } catch (JSONException e) {
-                        return Response.error(new ParseError(e));
-                    }
-                }
-
-
-                @Override
-                public void deliverError(VolleyError error) {
-                    super.deliverError(error);
-                }
-
-                @Override
-                protected VolleyError parseNetworkError(VolleyError volleyError) {
-                    return super.parseNetworkError(volleyError);
-                }
-            };
+            });
 
             requestQueue3 = Volley.newRequestQueue(getContext());
             requestQueue3.add(request3);
@@ -194,9 +150,10 @@ public class homefragment extends Fragment {
                             int price = jsonObject.getInt("productPrice");
                             int brandid = jsonObject.getInt("brandsId");
                             String image="http://clothesshopapi2.azurewebsites.net/img/products/"+jsonObject.getString("imgName");
+                            int percentage = jsonObject.getInt("ProductOfferPercentage");
                             String logo=jsonObject.getString("ImgBrands");
                             System.out.println(id);
-                            list6.add(new newsinheret(creatorName, price, "", image, logo, mainid, id, brandid, 0, 0));
+                            list6.add(new newsinheret(creatorName, price, "", image, logo, mainid, id, brandid, percentage, 0));
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -213,53 +170,7 @@ public class homefragment extends Fragment {
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            }) {
-                @Override
-                protected Response<JSONArray> parseNetworkResponse(NetworkResponse response) {
-                    try {
-                        Cache.Entry cacheEntry = HttpHeaderParser.parseCacheHeaders(response);
-                        if (cacheEntry == null) {
-                            cacheEntry = new Cache.Entry();
-                        }
-                        final long cacheHitButRefreshed = 3 * 60 * 1000; // in 3 minutes cache will be hit, but also refreshed on background
-                        final long cacheExpired = 24 * 60 * 60 * 1000; // in 24 hours this cache entry expires completely
-                        long now = System.currentTimeMillis();
-                        final long softExpire = now + cacheHitButRefreshed;
-                        final long ttl = now + cacheExpired;
-                        cacheEntry.data = response.data;
-                        cacheEntry.softTtl = softExpire;
-                        cacheEntry.ttl = ttl;
-                        String headerValue;
-                        headerValue = response.headers.get("Date");
-                        if (headerValue != null) {
-                            cacheEntry.serverDate = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        headerValue = response.headers.get("Last-Modified");
-                        if (headerValue != null) {
-                            cacheEntry.lastModified = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        cacheEntry.responseHeaders = response.headers;
-                        final String jsonString = new String(response.data,
-                                HttpHeaderParser.parseCharset(response.headers));
-                        return Response.success(new JSONArray(jsonString), cacheEntry);
-                    } catch (UnsupportedEncodingException e) {
-                        return Response.error(new ParseError(e));
-                    } catch (JSONException e) {
-                        return Response.error(new ParseError(e));
-                    }
-                }
-
-
-                @Override
-                public void deliverError(VolleyError error) {
-                    super.deliverError(error);
-                }
-
-                @Override
-                protected VolleyError parseNetworkError(VolleyError volleyError) {
-                    return super.parseNetworkError(volleyError);
-                }
-            };
+            }) ;
 
             requestQueue4 = Volley.newRequestQueue(getContext());
             requestQueue4.add(request4);
@@ -308,53 +219,7 @@ public class homefragment extends Fragment {
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            }) {
-                @Override
-                protected Response<JSONArray> parseNetworkResponse(NetworkResponse response) {
-                    try {
-                        Cache.Entry cacheEntry = HttpHeaderParser.parseCacheHeaders(response);
-                        if (cacheEntry == null) {
-                            cacheEntry = new Cache.Entry();
-                        }
-                        final long cacheHitButRefreshed = 3 * 60 * 1000; // in 3 minutes cache will be hit, but also refreshed on background
-                        final long cacheExpired = 24 * 60 * 60 * 1000; // in 24 hours this cache entry expires completely
-                        long now = System.currentTimeMillis();
-                        final long softExpire = now + cacheHitButRefreshed;
-                        final long ttl = now + cacheExpired;
-                        cacheEntry.data = response.data;
-                        cacheEntry.softTtl = softExpire;
-                        cacheEntry.ttl = ttl;
-                        String headerValue;
-                        headerValue = response.headers.get("Date");
-                        if (headerValue != null) {
-                            cacheEntry.serverDate = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        headerValue = response.headers.get("Last-Modified");
-                        if (headerValue != null) {
-                            cacheEntry.lastModified = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        cacheEntry.responseHeaders = response.headers;
-                        final String jsonString = new String(response.data,
-                                HttpHeaderParser.parseCharset(response.headers));
-                        return Response.success(new JSONArray(jsonString), cacheEntry);
-                    } catch (UnsupportedEncodingException e) {
-                        return Response.error(new ParseError(e));
-                    } catch (JSONException e) {
-                        return Response.error(new ParseError(e));
-                    }
-                }
-
-
-                @Override
-                public void deliverError(VolleyError error) {
-                    super.deliverError(error);
-                }
-
-                @Override
-                protected VolleyError parseNetworkError(VolleyError volleyError) {
-                    return super.parseNetworkError(volleyError);
-                }
-            };
+            });
 
             requestQueue = Volley.newRequestQueue(getContext());
             requestQueue.add(request);
@@ -380,7 +245,7 @@ public class homefragment extends Fragment {
                             e.printStackTrace();
                         }
                     }
-                    searchby.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+                    searchby.setLayoutManager(new GridLayoutManager(getContext(),2, LinearLayoutManager.HORIZONTAL, false));
                     searchadapter = new searchadapter(list4, getContext());
                     searchby.setAdapter(searchadapter);
                 }
@@ -389,54 +254,7 @@ public class homefragment extends Fragment {
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            }) {
-                @Override
-                protected Response<JSONArray> parseNetworkResponse(NetworkResponse response) {
-                    try {
-                        Cache.Entry cacheEntry = HttpHeaderParser.parseCacheHeaders(response);
-                        if (cacheEntry == null) {
-                            cacheEntry = new Cache.Entry();
-                        }
-                        final long cacheHitButRefreshed = 3 * 60 * 1000; // in 3 minutes cache will be hit, but also refreshed on background
-                        final long cacheExpired = 24 * 60 * 60 * 1000; // in 24 hours this cache entry expires completely
-                        long now = System.currentTimeMillis();
-                        final long softExpire = now + cacheHitButRefreshed;
-                        final long ttl = now + cacheExpired;
-                        cacheEntry.data = response.data;
-                        cacheEntry.softTtl = softExpire;
-                        cacheEntry.ttl = ttl;
-                        String headerValue;
-                        headerValue = response.headers.get("Date");
-                        if (headerValue != null) {
-                            cacheEntry.serverDate = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        headerValue = response.headers.get("Last-Modified");
-                        if (headerValue != null) {
-                            cacheEntry.lastModified = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        cacheEntry.responseHeaders = response.headers;
-                        final String jsonString = new String(response.data,
-                                HttpHeaderParser.parseCharset(response.headers));
-                        return Response.success(new JSONArray(jsonString), cacheEntry);
-                    } catch (UnsupportedEncodingException e) {
-                        return Response.error(new ParseError(e));
-                    } catch (JSONException e) {
-                        return Response.error(new ParseError(e));
-                    }
-
-                }
-
-
-                @Override
-                public void deliverError(VolleyError error) {
-                    super.deliverError(error);
-                }
-
-                @Override
-                protected VolleyError parseNetworkError(VolleyError volleyError) {
-                    return super.parseNetworkError(volleyError);
-                }
-            };
+            });
             requestQueue2 = Volley.newRequestQueue(getContext());
             requestQueue2.add(request2);
         }
@@ -471,14 +289,7 @@ public class homefragment extends Fragment {
             }
         });
 
-        // "Button" responsible for navigating to wishlist.
-        card3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.fragment2, new bookmarksfragment()).commit();
-            }
-        });
+
 
         // See all new Items.
         see1.setOnClickListener(new View.OnClickListener() {
@@ -513,16 +324,7 @@ public class homefragment extends Fragment {
             }
         });
 
-        // See all brands available.
-        see4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), seeAllSearch.class);
-                intent.putParcelableArrayListExtra("list", list4);
-                intent.putExtra("text", brand.getText().toString());
-                startActivity(intent);
-            }
-        });
+
 
         return v;
     }
@@ -536,9 +338,7 @@ public class homefragment extends Fragment {
         see1 = v.findViewById(R.id.seeAllNew);
         see2 = v.findViewById(R.id.seeAllTop);
         see3 = v.findViewById(R.id.seeAllFeatured);
-        see4 = v.findViewById(R.id.seeAllSearchBy);
         card2 = v.findViewById(R.id.below);
-        card3 = v.findViewById(R.id.foryou);
         layout = v.findViewById(R.id.onsale5);
         newa = v.findViewById(R.id.news);
         tops = v.findViewById(R.id.topd);

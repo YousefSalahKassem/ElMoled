@@ -147,6 +147,8 @@
                             android:layout_marginLeft="30sp"
                             android:layout_marginTop="20sp"
                             android:layout_marginRight="30sp"
+                            android:imeOptions="actionDone"
+
                             android:background="@color/white"
                             android:ems="10"
                             android:hint="Password"
@@ -251,6 +253,7 @@
                        android:id="@+id/phonenumber2"
                         android:inputType="phone"
                         android:layout_marginLeft="30sp"
+                        android:imeOptions="actionDone"
                         android:layout_marginTop="20sp"
                         android:layout_marginRight="30sp"
                         android:layout_marginBottom="20sp"/>

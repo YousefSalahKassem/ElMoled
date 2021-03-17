@@ -19,8 +19,8 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_width="400px"
+                android:layout_height="600px">
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -37,6 +37,7 @@
                     app:layout_constraintStart_toStartOf="@+id/imageView"
                     app:layout_constraintTop_toTopOf="@+id/imageView"
                     app:srcCompat="@drawable/model1" />
+
                 <ImageView
                     android:id="@+id/imageView12"
                     android:layout_width="50sp"

@@ -119,6 +119,8 @@ you can see our opportunity products."
             android:layout_marginLeft="20sp"
             android:layout_marginTop="20sp"
             android:layout_marginRight="20sp"
+            android:imeOptions="actionDone"
+
             android:ems="10"
             android:hint="Phone"
             android:inputType="phone" />

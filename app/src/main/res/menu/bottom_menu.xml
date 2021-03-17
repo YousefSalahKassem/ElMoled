@@ -8,9 +8,7 @@
         android:id="@+id/categoriesFragment"
         android:icon="@drawable/categories"/>
 
-    <item android:title=""
-        android:id="@+id/bookmarksFragment"
-        android:icon="@drawable/bookmarkss"/>
+
     <item android:title=""
         android:id="@+id/settingsFragment"
         android:icon="@drawable/settings"/>

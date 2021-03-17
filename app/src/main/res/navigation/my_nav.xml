@@ -20,11 +20,7 @@
         android:name="com.elmoledmol.www.shopfragment"
         android:label="fragment_shop"
         tools:layout="@layout/fragment_shopfragment" />
-    <fragment
-        android:id="@+id/bookmarksFragment"
-        android:name="com.elmoledmol.www.bookmarksfragment"
-        android:label="fragment_bookmarks"
-        tools:layout="@layout/fragment_bookmarksfragment" />
+
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.elmoledmol.www.settingfragment"

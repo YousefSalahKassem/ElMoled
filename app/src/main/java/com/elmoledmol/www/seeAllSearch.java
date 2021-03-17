@@ -16,6 +16,7 @@ public class seeAllSearch extends AppCompatActivity {
     CardView card;
     TextView category;
     RecyclerView seeAllSearchBy;
+    int ind=2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

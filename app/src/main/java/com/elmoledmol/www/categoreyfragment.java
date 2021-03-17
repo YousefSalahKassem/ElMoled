@@ -526,7 +526,7 @@ public class categoreyfragment extends Fragment {
                                 }
                             }
 
-                            brands.setSelection(position);
+                            brands.setSelection(indicator);
 
 //                            ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), R.layout.support_simple_spinner_dropdown_item, brandNames2);
 //                            adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
@@ -591,7 +591,7 @@ public class categoreyfragment extends Fragment {
 
 
 
-                } else {
+                } else if ( indicator == 2){
                     System.out.println("bundle is empty");
                 }
             }

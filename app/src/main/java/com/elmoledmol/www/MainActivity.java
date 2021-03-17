@@ -64,8 +64,12 @@ public class MainActivity extends AppCompatActivity {
         email = view.findViewById(R.id.email3);
         SharedPreferences sharedPreferences = getSharedPreferences("checkbox", 0);
         String checkbox = sharedPreferences.getString("email", null);
-        email.setText(checkbox);
-
+        if(checkbox!=null) {
+            email.setText(checkbox);
+        }
+        else {
+            email.setText("guest123@gmail.com");
+        }
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavController navController1 = Navigation.findNavController(this, R.id.fragment2);
         NavController navController = Navigation.findNavController(this, R.id.fragment2);
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.homeFragment, R.id.categoriesFragment, R.id.bookmarksFragment, R.id.settingsFragment).build();
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.homeFragment, R.id.categoriesFragment, R.id.settingsFragment).build();
         NavigationUI.setupActionBarWithNavController(MainActivity.this, navController, appBarConfiguration);
         NavigationUI.setupActionBarWithNavController(MainActivity.this, navController, drawerLayout);
         NavigationUI.setupWithNavController(navigationView, navController);
@@ -161,7 +165,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Intent intent = getIntent();
-//        counter.setText(String.valueOf(intent.getIntExtra("count",0)));
+        int indicator = intent.getIntExtra("from see all",0);
+        if (indicator == 1) {
+//            Bundle bundle=new Bundle();
+//            bundle.putInt("id", list.get(position).getBrandid());
+//            bundle.putString("name",list.get(position).getProduct());
+//            bundle.putInt("from home",2);
+            NavController navController2 = Navigation.findNavController(this,R.id.fragment2);
+            navController2.navigate(R.id.categoriesFragment);
+        }
         counter.setText(String.valueOf(loadData().size()));
     }
 

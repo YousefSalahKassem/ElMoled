@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -67,8 +69,12 @@ public class myCartActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(loadData().size()==0){
+                    Toast.makeText(myCartActivity.this, "You need to add some items", Toast.LENGTH_SHORT).show();
+                }
+                else {
                Intent intent=new Intent(myCartActivity.this,ordercheckout.class);
-               startActivity(intent);
+               startActivity(intent);}
             }
         });
 
@@ -113,7 +119,7 @@ public class myCartActivity extends AppCompatActivity {
 
     List<Integer> favs = new ArrayList<>();
 
-    ItemTouchHelper.SimpleCallback simpleCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+    ItemTouchHelper.SimpleCallback simpleCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT ) {
         @Override
         public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
             return false;

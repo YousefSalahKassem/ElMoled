@@ -70,6 +70,7 @@
                         android:shadowColor="#FFFFFF"
                         android:hint="Search..."
                         android:textColor="#FFFFFF"
+                        android:imeOptions="actionDone"
                         android:textColorHighlight="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textColorLink="#FFFFFF"

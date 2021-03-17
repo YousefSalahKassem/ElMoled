@@ -51,6 +51,7 @@
                 android:layout_marginStart="10dp"
                 android:alpha="0"
                 android:ems="10"
+                android:imeOptions="actionDone"
                 android:inputType="textPersonName"
                 android:shadowColor="#FFFFFF"
                 android:hint="Search..."

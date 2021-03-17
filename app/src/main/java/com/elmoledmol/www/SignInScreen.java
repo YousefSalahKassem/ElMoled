@@ -67,6 +67,7 @@ public class SignInScreen extends Fragment {
         facebook = view.findViewById(R.id.signinfacebook);
         signup = view.findViewById(R.id.signuptext);
         forgot = view.findViewById(R.id.forgot);
+
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
