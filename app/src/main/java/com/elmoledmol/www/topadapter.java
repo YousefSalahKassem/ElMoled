@@ -1,6 +1,7 @@
 package com.elmoledmol.www;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,6 +35,20 @@ public class topadapter extends RecyclerView.Adapter<topadapter.mh> {
     @Override
     public void onBindViewHolder(@NonNull mh holder, int position) {
      Picasso.get().load(list.get(position).getImagemodel()).into(holder.imagemodel);
+     holder.itemView.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             Intent intent = new Intent(holder.itemView.getContext(), productInformation.class);
+             intent.putExtra("productName", list.get(position).getProduct());
+             intent.putExtra("rate", list.get(position).getRate());
+             intent.putExtra("price", list.get(position).getPrice() * (100 - list.get(position).percentage) / 100);
+             intent.putExtra("productID",list.get(position).getId());
+             intent.putExtra("mainProductId",list.get(position).getMainid());
+             intent.putExtra("brandsId",list.get(position).getBrandid());
+             intent.putExtra("image",list.get(position).getLogo());
+             holder.itemView.getContext().startActivity(intent);
+         }
+     });
     }
 
     @Override

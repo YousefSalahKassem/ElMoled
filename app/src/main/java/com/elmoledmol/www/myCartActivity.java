@@ -30,11 +30,10 @@ import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator
 public class myCartActivity extends AppCompatActivity {
     RecyclerView recyclerCart;
     CartAdapter adapter;
-    List<Integer> images = new ArrayList<>();
     CardView card;
     Button button;
     ImageView back;
-
+    List<adressinheret> listAddresses = new ArrayList<>();
     ArrayList<cartinheret> list = new ArrayList<>();
 
 
@@ -69,6 +68,7 @@ public class myCartActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(loadData().size()==0){
                     Toast.makeText(myCartActivity.this, "You need to add some items", Toast.LENGTH_SHORT).show();
                 }
@@ -107,6 +107,8 @@ public class myCartActivity extends AppCompatActivity {
         return list;
     }
 
+
+
     private void saveData(List<cartinheret> list) {
         SharedPreferences sharedPreferences = getSharedPreferences("preferences2",0);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -135,7 +137,6 @@ public class myCartActivity extends AppCompatActivity {
                 case ItemTouchHelper.LEFT:
                     cartinheret deletedRecord = new cartinheret(list.get(position).name, list.get(position).price, list.get(position).images,list.get(position).mainId, list.get(position).Qunatity,list.get(position).colorId,list.get(position).sizeId);
                     if (position == lastPosition) {
-
                         list.remove(lastPosition);
                         adapter.notifyItemRemoved(lastPosition);
                         adapter.notifyDataSetChanged();

@@ -71,7 +71,7 @@ public class SignInScreen extends Fragment {
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(7);
+                viewPager.setCurrentItem(6);
             }
         });
         signIn.setOnClickListener(new View.OnClickListener() {

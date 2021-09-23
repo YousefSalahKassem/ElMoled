@@ -170,29 +170,19 @@
                         android:layout_marginLeft="20sp"
                         android:layout_marginTop="10sp"
                         android:layout_marginRight="20sp"
-                        android:spinnerMode="dialog" />
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/spinner_background"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20sp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/searchCategoryText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingLeft="20sp"
-                            android:textColor="#000000"
-                            android:textSize="22sp" />
-
-                    </LinearLayout>
+                        android:orientation="horizontal"/>
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/CategoriesCategories"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="10sp"
                         android:layout_marginTop="30sp"
                         android:layout_marginRight="10sp" />

@@ -59,7 +59,7 @@
                     android:layout_weight="0"
                     app:srcCompat="@drawable/logo_splash" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
@@ -68,23 +68,20 @@
                         android:id="@+id/toCartMain"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:padding="20sp"
+                        android:padding="@dimen/_12sdp"
                         android:src="@drawable/cart"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
                         app:tint="#FFFFFF" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cardViewCart"
-                        android:layout_width="20sp"
-                        android:layout_height="20sp"
-                        android:layout_marginEnd="21dp"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
                         app:cardBackgroundColor="@color/purple_500"
                         app:cardCornerRadius="100sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+
                         >
 
                         <TextView
@@ -92,15 +89,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="99"
+
                             android:gravity="center"
+                            android:text="99"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12sp" />
 
 
                     </androidx.cardview.widget.CardView>
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                </RelativeLayout>
 
 
             </LinearLayout>

@@ -6,7 +6,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class retrofitclient {
-    private static final String base_url="http://clothesshopapi2.azurewebsites.net/";
+    private static final String base_url="http://hwayadesigns-001-site3.itempurl.com/";
     private static retrofitclient minstance;
     private final Retrofit retrofit;
     private static Gson gson;

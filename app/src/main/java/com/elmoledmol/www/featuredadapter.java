@@ -60,6 +60,7 @@ public class featuredadapter extends RecyclerView.Adapter<featuredadapter.mh> {
                 intent.putExtra("productID",list.get(position).getId());
                 intent.putExtra("mainProductId",list.get(position).getMainid());
                 intent.putExtra("brandsId",list.get(position).getBrandid());
+                intent.putExtra("image",list.get(position).getImagemodel());
 
                 context.startActivity(intent);
 

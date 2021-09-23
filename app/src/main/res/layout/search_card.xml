@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -12,6 +14,7 @@
         app:cardCornerRadius="10sp"
         app:cardElevation="10sp">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -19,8 +22,8 @@
 
             <ImageView
                 android:id="@+id/imageView11"
-                android:layout_width="400px"
-                android:layout_height="600px"
+                android:layout_width="300px"
+                android:layout_height="200px"
                 android:layout_marginBottom="20sp"
                 app:srcCompat="@drawable/brand1" />
 
@@ -32,6 +35,9 @@
                 android:text="Pull &amp; Bear"
                 android:textColor="#000000"
                 android:textSize="18sp" />
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>

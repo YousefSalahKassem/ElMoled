@@ -65,6 +65,7 @@ public class productInformation extends AppCompatActivity {
     int choiceColor;
     int choiceSize;
     int mainId;
+    String myimage2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,6 +119,7 @@ public class productInformation extends AppCompatActivity {
         int brandId = intent.getIntExtra("brandsId", 0);
         int ID = intent.getIntExtra("productID", 0);
         String img = intent.getStringExtra("imgNameList");
+        String myimage2=intent.getStringExtra("image");
         name.setText(productName);
         price.setText("EGP " + price2);
         ratingBar.setRating((float) rate);
@@ -126,7 +128,7 @@ public class productInformation extends AppCompatActivity {
         reviews fragobj = new reviews();
         fragobj.setArguments(bundle);
 
-        String url = "http://clothesshopapi2.azurewebsites.net/api/Product/Color?id=" + mainId;
+        String url = "http://hwayadesigns-001-site3.itempurl.com/api/Product/Color?id=" + mainId;
         request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -159,7 +161,7 @@ public class productInformation extends AppCompatActivity {
                         for (int j=0;j<imagesArray.length();j++) {
                             JSONObject imagesObject = imagesArray.getJSONObject(j);
                             String image = imagesObject.getString("img");
-                            String myImg = "http://clothesshopapi2.azurewebsites.net/img/products/"+image;
+                            String myImg = "http://hwayadesigns-001-site3.itempurl.com/img/products/"+image;
                             images.add(myImg);
                             System.out.println(images);
                         }
@@ -279,12 +281,14 @@ public class productInformation extends AppCompatActivity {
                     intent.putExtra("price",price2);
                     intent.putExtra("mainProductId",mainId);
                     intent.putExtra("imgNameList",img);
+
                     System.out.println(productName);
                     listCart.clear();
                     listCart.addAll(loadData());
-                    listCart.add(new cartinheret(productName,price2,img,mainId,1,choiceColor,choiceSize));
+                    listCart.add(new cartinheret(productName,price2,myimage2,mainId,1,choiceColor,choiceSize));
                     System.out.println(choiceColor + " <--- Color ID going to Cart");
                     System.out.println(choiceSize + " <--- Size ID going to Cart");
+                    System.out.println(img+"<--- string");
 
                     saveData(listCart);
                     startActivity(intent);
@@ -393,6 +397,7 @@ public class productInformation extends AppCompatActivity {
 
                     choice = list3.get(position).colorid;
                     productInformation.this.choiceColor = choice;
+                    productInformation.this.myimage2= list3.get(position).getImagemodel();
 
 
 //                    preferencesColorId.edit().clear().commit();

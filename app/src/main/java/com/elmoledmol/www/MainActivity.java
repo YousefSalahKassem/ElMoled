@@ -28,6 +28,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.onesignal.OneSignal;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     List<cartinheret> list = new ArrayList<>();
     SharedPreferences sharedPreferences2;
+
+    private static final String ONESIGNAL_APP_ID = "5ee47b5c-7d2f-4495-ae52-7b70ee0212da";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,17 +167,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        Intent intent = getIntent();
-        int indicator = intent.getIntExtra("from see all",0);
-        if (indicator == 1) {
-//            Bundle bundle=new Bundle();
-//            bundle.putInt("id", list.get(position).getBrandid());
-//            bundle.putString("name",list.get(position).getProduct());
-//            bundle.putInt("from home",2);
-            NavController navController2 = Navigation.findNavController(this,R.id.fragment2);
-            navController2.navigate(R.id.categoriesFragment);
-        }
+
+        OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE,OneSignal.LOG_LEVEL.NONE);
+
+        OneSignal.initWithContext(this);
+        OneSignal.setAppId(ONESIGNAL_APP_ID);
+
         counter.setText(String.valueOf(loadData().size()));
+
     }
 
     @Override

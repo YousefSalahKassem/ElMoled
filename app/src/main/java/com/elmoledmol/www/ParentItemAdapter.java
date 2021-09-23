@@ -34,7 +34,6 @@ public class ParentItemAdapter extends RecyclerView.Adapter<ParentItemAdapter.Vi
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Picasso.get().load(ChildItemList.get(position).getImagemodel()).into(holder.model);
-        Picasso.get().load(ChildItemList.get(position).getLogobrand()).into(holder.logo);
         holder.itemName.setText(ChildItemList.get(position).getProductname());
         holder.discount.setText(ChildItemList.get(position).getDiscount());
         holder.newPrice.setText(ChildItemList.get(position).getNewPrice());

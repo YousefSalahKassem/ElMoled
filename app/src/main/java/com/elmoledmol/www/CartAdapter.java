@@ -16,6 +16,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.squareup.picasso.Picasso;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -44,8 +45,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.mh> {
 
     @Override
     public void onBindViewHolder(@NonNull CartAdapter.mh holder, int position) {
-//            Picasso.get().load(loadData().get(position).getImages()).resize(90,90).into(holder.image);
-
+            Picasso.get().load(list2.get(position).getImages()).resize(90,90).into(holder.image);
         holder.quantity.setText(String.valueOf(list2.get(position).getQunatity()));
         holder.cost.setText(String.valueOf(list2.get(position).getPrice()));
         holder.name.setText(String.valueOf(list2.get(position).name));

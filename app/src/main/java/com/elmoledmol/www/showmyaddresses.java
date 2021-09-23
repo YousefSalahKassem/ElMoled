@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -18,7 +19,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,12 +43,7 @@ public class showmyaddresses extends AppCompatActivity {
         back = findViewById(R.id.backMyAddresses);
         cardView.setBackgroundResource(R.drawable.corner);
         getSupportActionBar().hide();
-        list.add(new adressinheret("WORK ADDRESS", "EL-hourya . No.630, \n" +
-                "12345 - Alexandria/Egypt"));
-        list.add(new adressinheret("WORK ADDRESS", "EL-hourya . No.630, \n" +
-                "123456 - Alexandria/Egypt"));
-        list.add(new adressinheret("WORK ADDRESS", "EL-hourya . No.630, \n" +
-                "1234567 - Alexandria/Egypt"));
+        list = loadData();
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         showmyaddresses = new showmyaddressadapter(getApplicationContext(), list);
         recyclerView.setAdapter(showmyaddresses);
@@ -57,5 +56,27 @@ public class showmyaddresses extends AppCompatActivity {
         });
 
 
+    }
+
+    private void saveData(List<adressinheret> list) {
+        SharedPreferences sharedPreferences = getSharedPreferences("Addresses",0);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        Gson gson = new Gson();
+        String json = gson.toJson(list);
+        editor.putString("address", json);
+        editor.apply();
+    }
+    private List<adressinheret> loadData() {
+        SharedPreferences sharedPreferences = getSharedPreferences("Addresses",0);;
+        Gson gson = new Gson();
+        String json = sharedPreferences.getString("address",null);
+        Type type = new TypeToken<ArrayList<adressinheret>>() {}.getType();
+        list = gson.fromJson(json,type);
+
+        if (list == null) {
+            list = new ArrayList<>();
+        }
+
+        return list;
     }
 }

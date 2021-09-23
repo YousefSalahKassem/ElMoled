@@ -1,14 +1,7 @@
 package com.elmoledmol.www;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import androidx.activity.OnBackPressedCallback;
-import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,11 +15,22 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.OnBackPressedCallback;
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class moresettings extends Fragment {
     CardView cardView, save;
@@ -83,7 +87,7 @@ public class moresettings extends Fragment {
         });
         SharedPreferences sharedPreferences2 = getActivity().getSharedPreferences("phone", 0);
         String silent3 = sharedPreferences2.getString("myphone", null);
-phone.setText(silent3);
+        phone.setText(silent3);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), R.layout.support_simple_spinner_dropdown_item, list);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(getActivity(), R.layout.support_simple_spinner_dropdown_item, list2);
         SharedPreferences settings = getActivity().getSharedPreferences("myswitch", 0);
@@ -127,6 +131,13 @@ phone.setText(silent3);
             }
         });
 
+        SharedPreferences passwordChange = getContext().getSharedPreferences("checkbox3", 0);
+
+        ChangePasswordBody body = new ChangePasswordBody();
+        body.setNewPassword(editText.getText().toString());
+        body.setOldPassword(sharedPreferences.getString("password",null));
+        body.setConfirmPassword(editText.getText().toString());
+
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,10 +147,24 @@ phone.setText(silent3);
                 editor.putString("password", editText.getText().toString().trim());
                 editor.putInt("location", spinner2.getSelectedItemPosition());
                 editor.apply();
-                SharedPreferences sharedPreferences3=getContext().getSharedPreferences("phone", 0);
-                SharedPreferences.Editor editor2=sharedPreferences3.edit();
-                editor2.putString("myphone",phone.getText().toString().trim());
+
+                SharedPreferences sharedPreferences3 = getContext().getSharedPreferences("phone", 0);
+                SharedPreferences.Editor editor2 = sharedPreferences3.edit();
+                editor2.putString("myphone", phone.getText().toString().trim());
                 editor2.apply();
+
+                Call<ResponseBody> call = retrofitclient.getInstance().getApi().changePassword("Bearer "+passwordChange.getString("acesstoken", null),body);
+                call.enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                        System.out.println(response.code());
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                    }
+                });
                 save.setVisibility(View.GONE);
                 Toast toast = new Toast(getContext());
                 toast.setGravity(Gravity.BOTTOM, 0, 0);

@@ -25,6 +25,7 @@
                 android:id="@+id/modelCart"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:layout_marginRight="20sp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/model2" />
 
@@ -43,7 +44,7 @@
                     android:layout_weight="0"
                     android:text="This is a test Item"
                     android:textColor="#FFFFFF"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -79,7 +80,7 @@
                         android:id="@+id/plusMore"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20sp"
+                        android:layout_marginLeft="40sp"
                         android:layout_weight="0"
                         app:srcCompat="@drawable/plus" />
                 </LinearLayout>

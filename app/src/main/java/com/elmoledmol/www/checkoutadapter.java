@@ -17,9 +17,9 @@ import java.util.List;
 
 public class checkoutadapter extends RecyclerView.Adapter<checkoutadapter.mh> {
 Context context;
-ArrayList<cartinheret> list;
+List<cartinheret> list;
 
-    public checkoutadapter(Context context, ArrayList<cartinheret> list) {
+    public checkoutadapter(Context context, List<cartinheret> list) {
         this.context = context;
         this.list = list;
     }
@@ -34,6 +34,7 @@ ArrayList<cartinheret> list;
     @Override
     public void onBindViewHolder(@NonNull checkoutadapter.mh holder, int position) {
 holder.product.setText(list.get(position).getName());
+Picasso.get().load(list.get(position).getImages()).into(holder.imageView);
 holder.quantity.setText("x"+String.valueOf(list.get(position).getQunatity()));
 holder.price.setText("EGP"+String.valueOf(list.get(position).getPrice()));
 

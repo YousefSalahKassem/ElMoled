@@ -22,13 +22,7 @@
                 android:layout_width="400px"
                 android:layout_height="600px">
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/brand1" />
+
 
                 <ImageView
                     android:id="@+id/imageView8"
@@ -49,7 +43,7 @@
                     app:tint="@color/purple_500" />
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/percentNew"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="7dp"

@@ -19,7 +19,8 @@ public class SplashLoginActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         IntroAdapter adapter = new IntroAdapter(getSupportFragmentManager(),getApplicationContext());
         viewPager.setAdapter(adapter);
-
     }
+
+
 
 }

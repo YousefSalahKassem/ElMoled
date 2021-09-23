@@ -46,10 +46,10 @@ public class homefragment extends Fragment {
     topadapter topadapter;
     searchadapter searchadapter;
     featuredadapter featuredadapter;
-    String topitems="http://clothesshopapi2.azurewebsites.net/api/Product/List?state=3&BrandId=0";
-    String newitems="http://clothesshopapi2.azurewebsites.net/api/Product/List?state=1&BrandId=0";
-    String featuredUrl = "http://clothesshopapi2.azurewebsites.net/api/Product/List?state=2&BrandId=0"; // URL to obtain featured Items.
-    String brands = "http://clothesshopapi2.azurewebsites.net/api/Brands/list"; // URL to obtain available brands.
+    String topitems="http://hwayadesigns-001-site3.itempurl.com/api/Product/List?state=3&BrandId=0";
+    String newitems="http://hwayadesigns-001-site3.itempurl.com/api/Product/List?state=1&BrandId=0";
+    String featuredUrl = "http://hwayadesigns-001-site3.itempurl.com/api/Product/List?state=2&BrandId=0"; // URL to obtain featured Items.
+    String brands = "http://hwayadesigns-001-site3.itempurl.com/api/Brands/list"; // URL to obtain available brands.
     private RequestQueue requestQueue, requestQueue2,requestQueue3,requestQueue4;
     private JsonArrayRequest request, request2,request3,request4;
 
@@ -101,8 +101,7 @@ public class homefragment extends Fragment {
                             int price = jsonObject.getInt("productPrice");
                             int brandid = jsonObject.getInt("brandsId");
                             int rate = jsonObject.getInt("averageRate");
-                            String image="http://clothesshopapi2.azurewebsites.net/img/products/"+jsonObject.getString("imgName");
-
+                            String image="http://hwayadesigns-001-site3.itempurl.com/img/products/"+jsonObject.getString("imgName");
                             String logo=jsonObject.getString("ImgBrands");
                             int percentage = jsonObject.getInt("ProductOfferPercentage");
                             System.out.println(id);
@@ -123,8 +122,58 @@ public class homefragment extends Fragment {
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            });
+            }){
+                @Override
+                protected Response<JSONArray> parseNetworkResponse(NetworkResponse response) {
+                    try {
+                        Cache.Entry cacheEntry = HttpHeaderParser.parseCacheHeaders(response);
+                        if (cacheEntry == null) {
+                            cacheEntry = new Cache.Entry();
+                        }
+                        final long cacheHitButRefreshed = 3 * 60 * 1000; // in 3 minutes cache will be hit, but also refreshed on background
+                        final long cacheExpired = 24 * 60 * 60 * 1000; // in 24 hours this cache entry expires completely
+                        long now = System.currentTimeMillis();
+                        final long softExpire = now + cacheHitButRefreshed;
+                        final long ttl = now + cacheExpired;
+                        cacheEntry.data = response.data;
+                        cacheEntry.softTtl = softExpire;
+                        cacheEntry.ttl = ttl;
+                        String headerValue;
+                        headerValue = response.headers.get("Date");
+                        if (headerValue != null) {
+                            cacheEntry.serverDate = HttpHeaderParser.parseDateAsEpoch(headerValue);
+                        }
+                        headerValue = response.headers.get("Last-Modified");
+                        if (headerValue != null) {
+                            cacheEntry.lastModified = HttpHeaderParser.parseDateAsEpoch(headerValue);
+                        }
+                        cacheEntry.responseHeaders = response.headers;
+                        final String jsonString = new String(response.data,
+                                HttpHeaderParser.parseCharset(response.headers));
+                        return Response.success(new JSONArray(jsonString), cacheEntry);
+                    } catch (UnsupportedEncodingException e) {
+                        return Response.error(new ParseError(e));
+                    } catch (JSONException e) {
+                        return Response.error(new ParseError(e));
+                    }
+                }
 
+                @Override
+                protected void deliverResponse(JSONArray response) {
+                    super.deliverResponse(response);
+                }
+
+                @Override
+                public void deliverError(VolleyError error) {
+                    super.deliverError(error);
+                }
+
+                @Override
+                protected VolleyError parseNetworkError(VolleyError volleyError) {
+                    return super.parseNetworkError(volleyError);
+                }
+            };
+            MySingleton.getInstance(getContext()).addToRequestQueue(request3);
             requestQueue3 = Volley.newRequestQueue(getContext());
             requestQueue3.add(request3);
         }
@@ -149,11 +198,12 @@ public class homefragment extends Fragment {
                             int mainid = jsonObject.getInt("mainProductId");
                             int price = jsonObject.getInt("productPrice");
                             int brandid = jsonObject.getInt("brandsId");
-                            String image="http://clothesshopapi2.azurewebsites.net/img/products/"+jsonObject.getString("imgName");
+                            String myimage="http://hwayadesigns-001-site3.itempurl.com/img/products/"+jsonObject.getString("productimg");
+                            String image="http://hwayadesigns-001-site3.itempurl.com/img/products/"+jsonObject.getString("imgName");
                             int percentage = jsonObject.getInt("ProductOfferPercentage");
                             String logo=jsonObject.getString("ImgBrands");
                             System.out.println(id);
-                            list6.add(new newsinheret(creatorName, price, "", image, logo, mainid, id, brandid, percentage, 0));
+                            list6.add(new newsinheret(creatorName, price, "", image, myimage, mainid, id, brandid, percentage, 0));
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -197,8 +247,7 @@ public class homefragment extends Fragment {
                             int price = jsonObject.getInt("productPrice");
                             int brandid = jsonObject.getInt("brandsId");
                             int rate = jsonObject.getInt("averageRate");
-                            String image="http://clothesshopapi2.azurewebsites.net/img/products/"+jsonObject.getString("imgName");
-
+                            String image="http://hwayadesigns-001-site3.itempurl.com/img/products/"+jsonObject.getString("imgName");
                             String logo=jsonObject.getString("ImgBrands");
                             int percentage = jsonObject.getInt("ProductOfferPercentage");
                             System.out.println(id);
@@ -219,8 +268,7 @@ public class homefragment extends Fragment {
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            });
-
+            }) ;
             requestQueue = Volley.newRequestQueue(getContext());
             requestQueue.add(request);
         }
@@ -238,7 +286,7 @@ public class homefragment extends Fragment {
                         try {
                             jsonObject = response.getJSONObject(i);
                             String brand = jsonObject.getString("brandName");
-                            String imagebrand = "http://clothesshopapi2.azurewebsites.net/img/products/"+jsonObject.getString("imgName");
+                            String imagebrand = "http://hwayadesigns-001-site3.itempurl.com/img/products/"+jsonObject.getString("imgName");
                             int brandid = jsonObject.getInt("Id");
                             list4.add(new newsinheret(brand, imagebrand, brandid));
                         } catch (JSONException e) {

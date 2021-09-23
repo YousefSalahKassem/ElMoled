@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +32,11 @@ public class forgotpassword extends Fragment {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(6);
+                if (TextUtils.isEmpty(email.getText().toString().trim())) {
+                    email.setError("Email is required");
+                    return;
+                }
+                viewPager.setCurrentItem(7);
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

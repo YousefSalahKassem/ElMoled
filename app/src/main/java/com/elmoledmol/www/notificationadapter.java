@@ -31,25 +31,24 @@ import java.util.TimeZone;
 
 public class notificationadapter extends RecyclerView.Adapter<notificationadapter.mh> {
     Context context;
-    List<String> list = new ArrayList<>();
+    List<NotificationModel> list = new ArrayList<>();
 
-    public notificationadapter(Context context, List<String> list) {
+    public notificationadapter(Context context, List<NotificationModel> list) {
         this.context = context;
         this.list = list;
     }
 
     @NonNull
     @Override
-    public notificationadapter.mh onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public mh onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.notificationscard, parent, false);
         return new mh(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull notificationadapter.mh holder, int position) {
-        holder.message.setText(list.get(position));
-
-        holder.time.setText("just now");
+    public void onBindViewHolder(@NonNull mh holder, int position) {
+        holder.message.setText(list.get(position).Body);
+        holder.time.setText(list.get(position).Time.substring(0,10));
     }
 
     @Override

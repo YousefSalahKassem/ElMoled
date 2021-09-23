@@ -1,5 +1,7 @@
 package com.elmoledmol.www;
 
+import android.content.SharedPreferences;
+
 import org.json.JSONObject;
 
 import java.util.List;
@@ -13,8 +15,9 @@ import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
+import retrofit2.http.Url;
 
-public interface Api {
+public interface Api{
     @FormUrlEncoded
     @POST("api/Account/Register")
     Call<ResponseBody> createuser(
@@ -45,4 +48,19 @@ public interface Api {
             @Body MyData object
             );
 
+
+    @POST ()
+    Call<ResponseBody> resetPassword (
+            @Url String email
+    );
+
+    @POST ("api/Account/ChangePassword")
+    Call<ResponseBody> changePassword(
+            @Header("Authorization") String authorization,
+            @Body ChangePasswordBody object
+
+    );
+
 }
+
+

@@ -42,6 +42,7 @@ public class seealltopadapter extends RecyclerView.Adapter<seealltopadapter.mh> 
                 intent.putExtra("productID",list.get(position).getId());
                 intent.putExtra("mainProductId",list.get(position).getMainid());
                 intent.putExtra("brandsId",list.get(position).getBrandid());
+                intent.putExtra("image",list.get(position).getLogo());
                 holder.itemView.getContext().startActivity(intent);
             }
         });

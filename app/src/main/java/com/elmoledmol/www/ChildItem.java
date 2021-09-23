@@ -7,7 +7,7 @@ public class ChildItem {
     private int logo, model;
     private String discount, itemName, newPrice, oldPrice;
     private int mainid,percentage,brandid;
-    private String productname,imagemodel,logobrand;
+    private String productname,imagemodel;
     private int price;
 
     public int getMainid() {
@@ -50,13 +50,7 @@ public class ChildItem {
         this.imagemodel = imagemodel;
     }
 
-    public String getLogobrand() {
-        return logobrand;
-    }
 
-    public void setLogobrand(String logobrand) {
-        this.logobrand = logobrand;
-    }
 
     public int getPrice() {
         return price;
@@ -66,13 +60,13 @@ public class ChildItem {
         this.price = price;
     }
 
-    public ChildItem(int mainid, int percentage, int brandid, String productname, String imagemodel, String logobrand, int price) {
+    public ChildItem(int mainid, int percentage, int brandid, String productname, String imagemodel,  int price) {
         this.mainid = mainid;
         this.percentage = percentage;
         this.brandid = brandid;
         this.productname = productname;
         this.imagemodel = imagemodel;
-        this.logobrand = logobrand;
+
         this.price = price;
     }
 

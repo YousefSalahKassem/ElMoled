@@ -17,6 +17,7 @@
         <activity android:name=".showmyaddresses"></activity>
         <activity android:name=".showimage" />
         <activity android:name=".sellalltop" />
+        <activity android:name=".AppInfoActivity"/>
         <activity android:name=".processsuccess" />
         <activity android:name=".ordercheckout" />
         <activity android:name=".myCartActivity" />

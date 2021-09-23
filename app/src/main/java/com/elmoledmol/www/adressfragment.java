@@ -1,5 +1,6 @@
 package com.elmoledmol.www;
 
+import android.content.SharedPreferences;
 import android.graphics.Canvas;
 import android.os.Bundle;
 
@@ -19,7 +20,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,14 +64,9 @@ public class adressfragment extends Fragment {
 
             }
         });
-        list.add(new adressinheret("WORK ADDRESS", "EL-hourya . No.630, \n" +
-                "12345 - Alexandria/Egypt"));
-        list.add(new adressinheret("WORK ADDRESS", "EL-hourya . No.630, \n" +
-                "12345 - Alexandria/Egypt"));
-        list.add(new adressinheret("WORK ADDRESS", "EL-hourya . No.630, \n" +
-                "12345 - Alexandria/Egypt"));
+        list = loadData();
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        addressadapter = new addressadapter(getActivity(), list);
+        addressadapter = new addressadapter(getActivity(), loadData());
         recyclerView.setAdapter(addressadapter);
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -94,21 +93,45 @@ public class adressfragment extends Fragment {
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
 
             int position = viewHolder.getAdapterPosition();
+            int lastPosition = list.size() - 1;
 
             switch (direction) {
                 case ItemTouchHelper.LEFT:
                     adressinheret deletedRecord = new adressinheret(list.get(position).addresstype,list.get(position).details);
-                    list.remove(position);
-                    addressadapter.notifyItemRemoved(position);
-                    Snackbar.make(recyclerView,"Item removed successfully",Snackbar.LENGTH_LONG)
-                            .setAction("UNDO", new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    list.add(position,deletedRecord);
-                                    addressadapter.notifyItemInserted(position);
+                    if (position == lastPosition) {
+                        list.remove(lastPosition);
+                        addressadapter.notifyItemRemoved(lastPosition);
+                        addressadapter.notifyDataSetChanged();
 
-                                }
-                            }).show();
+                        saveData(list);
+
+                        Snackbar.make(recyclerView,"Item deleted successfully",Snackbar.LENGTH_LONG)
+                                .setAction("UNDO", new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        list.add(position,deletedRecord);
+                                        addressadapter.notifyItemInserted(position);
+                                        addressadapter.notifyDataSetChanged();
+
+                                        saveData(list);
+                                    }
+                                }).show();
+                    } else {
+                        list.remove(position);
+                        addressadapter.notifyItemRemoved(position);
+                        saveData(list);
+                        Snackbar.make(recyclerView,"Item removed successfully",Snackbar.LENGTH_LONG)
+                                .setAction("UNDO", new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        list.add(position,deletedRecord);
+                                        addressadapter.notifyItemInserted(position);
+                                        saveData(list);
+
+                                    }
+                                }).show();
+                    }
+
                     break;
             }
 
@@ -125,5 +148,27 @@ public class adressfragment extends Fragment {
             super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
         }
     };
+
+    private void saveData(List<adressinheret> list) {
+        SharedPreferences sharedPreferences = getContext().getSharedPreferences("Addresses",0);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        Gson gson = new Gson();
+        String json = gson.toJson(list);
+        editor.putString("address", json);
+        editor.apply();
+    }
+    private List<adressinheret> loadData() {
+        SharedPreferences sharedPreferences = getContext().getSharedPreferences("Addresses",0);;
+        Gson gson = new Gson();
+        String json = sharedPreferences.getString("address",null);
+        Type type = new TypeToken<ArrayList<adressinheret>>() {}.getType();
+        list = gson.fromJson(json,type);
+
+        if (list == null) {
+            list = new ArrayList<>();
+        }
+
+        return list;
+    }
 
 }

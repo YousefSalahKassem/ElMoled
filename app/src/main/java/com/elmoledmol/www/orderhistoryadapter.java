@@ -22,13 +22,13 @@ public class orderhistoryadapter extends RecyclerView.Adapter<orderhistoryadapte
 
     @NonNull
     @Override
-    public orderhistoryadapter.mh onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public mh onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(context).inflate(R.layout.orderhistorycard,parent,false);
         return new mh(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull orderhistoryadapter.mh holder, int position) {
+    public void onBindViewHolder(@NonNull mh holder, int position) {
         holder.placed.setText(list.get(position).getPlaced());
         holder.amount.setText(list.get(position).getAmount());
         holder.status.setText(list.get(position).getStatus());

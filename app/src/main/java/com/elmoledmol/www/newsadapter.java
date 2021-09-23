@@ -34,22 +34,45 @@ public class newsadapter extends RecyclerView.Adapter<newsadapter.mh> {
 
     @Override
     public void onBindViewHolder(@NonNull newsadapter.mh holder, int position) {
-holder.product.setText(list.get(position).getProduct());
+        holder.product.setText(list.get(position).getProduct());
         holder.price.setText(String.valueOf(list.get(position).getPrice()));
         holder.hiddenprice.setText(list.get(position).getHiddentext());
 
-        if(list.get(position).getHiddentext().isEmpty()){
+//        if(list.get(position).getHiddentext().isEmpty()){
+//            holder.linearLayout.setVisibility(View.GONE);
+//            holder.offer.setVisibility(View.GONE);
+//        }
+//        else{
+//            holder.linearLayout.setVisibility(View.VISIBLE);
+//            holder.offer.setVisibility(View.VISIBLE);
+//        }
+        float x = list.get(position).getPrice() * (100-list.get(position).percentage)/100;
+        if (list.get(position).getPercentage() == 0) {
             holder.linearLayout.setVisibility(View.GONE);
             holder.offer.setVisibility(View.GONE);
-        }
-        else{
+            holder.price.setText("EGP "+list.get(position).getPrice());
+
+        } else {
             holder.linearLayout.setVisibility(View.VISIBLE);
             holder.offer.setVisibility(View.VISIBLE);
+            holder.percent.setText(list.get(position).getPercentage()+"%");
+            holder.price.setText("EGP "+x);
+            holder.hiddenprice.setText("EGP "+list.get(position).getPrice());
         }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                context.startActivity(new Intent(context,productInformation.class));
+
+//                context.startActivity(new Intent(context,productInformation.class));
+                Intent intent = new Intent(context,productInformation.class);
+                intent.putExtra("ProductName", list.get(position).getProduct());
+                intent.putExtra("rate", list.get(position).getRate());
+                intent.putExtra("price",x);
+                intent.putExtra("productID",list.get(position).getId());
+                intent.putExtra("mainProductId",list.get(position).getMainid());
+                intent.putExtra("brandsId",list.get(position).getBrandid());
+                intent.putExtra("image",list.get(position).getImagemodel());
+                context.startActivity(intent);
             }
         });
     }
@@ -59,7 +82,7 @@ holder.product.setText(list.get(position).getProduct());
         return list.size();
     }
     public class mh extends RecyclerView.ViewHolder{
-        TextView product,price,hiddenprice;
+        TextView product,price,hiddenprice,percent;
         ImageView imagemodel,logo,offer;
         LinearLayout linearLayout;
         public mh(@NonNull View itemView) {
@@ -71,6 +94,7 @@ holder.product.setText(list.get(position).getProduct());
             hiddenprice=itemView.findViewById(R.id.textView14);
             offer=itemView.findViewById(R.id.imageView12);
             logo=imagemodel.findViewById(R.id.imageView);
+            percent = itemView.findViewById(R.id.percentNew);
         }
     }
 }

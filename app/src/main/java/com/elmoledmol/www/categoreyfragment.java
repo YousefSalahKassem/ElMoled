@@ -1,6 +1,8 @@
 package com.elmoledmol.www;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,32 +17,26 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.android.volley.Cache;
-import com.android.volley.NetworkResponse;
-import com.android.volley.ParseError;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.gson.JsonArray;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class categoreyfragment extends Fragment {
@@ -48,7 +44,7 @@ public class categoreyfragment extends Fragment {
     RecyclerView headers, categories;
     List<String> items = new ArrayList<>();
     List<ChildItem> itemList = new ArrayList<>();
-    TextView men, women, children, showtext;
+    TextView men, women, children;
     ImageView search;
     EditText searchText;
     TextView title;
@@ -79,7 +75,6 @@ public class categoreyfragment extends Fragment {
         children = v.findViewById(R.id.categoriesChildren);
         headers = v.findViewById(R.id.CategoriesItems);
         categories = v.findViewById(R.id.CategoriesCategories);
-        showtext = v.findViewById(R.id.searchCategoryText);
         brands = v.findViewById(R.id.Brands);
 
         // Responsible for showing the Search bar at the top (Animation)
@@ -106,10 +101,12 @@ public class categoreyfragment extends Fragment {
         men.setText("MEN");
         women.setText("WOMEN");
         children.setText("CHILDREN");
+
         items.add("Top");
         items.add("Pants");
         items.add("Shoes");
 
+        brands.setBackgroundResource(R.drawable.spinner_background);
 
         // Responsible for Search for only Men, no further filters
         men.setOnClickListener(new View.OnClickListener() {
@@ -124,7 +121,7 @@ public class categoreyfragment extends Fragment {
                 searchitemsAdapter searchItemsAdapter = new searchitemsAdapter(items, itemList, headers, categories, men);
                 headers.setAdapter(searchItemsAdapter);
 
-                String url = "http://clothesshopapi2.azurewebsites.net/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=";
+                String url = "http://hwayadesigns-001-site3.itempurl.com/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=";
 
                 request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
                     @Override
@@ -139,11 +136,11 @@ public class categoreyfragment extends Fragment {
                                 int productprice = jsonObject.getInt("productPrice");
                                 int percentage = jsonObject.getInt("ProductOfferPercentage");
                                 String imagemodel = jsonObject.getString("imgName");
-                                String myImg = "http://clothesshopapi2.azurewebsites.net/img/products/" + imagemodel;
+                                String myImg = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imagemodel;
                                 String imgbrands = jsonObject.getString("ImgBrands");
-                                String myImg2 = "http://clothesshopapi2.azurewebsites.net/img/products/" + imgbrands;
+                                String myImg2 = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imgbrands;
                                 int brandid = jsonObject.getInt("brandsId");
-                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, myImg2, productprice));
+                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg,  productprice));
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -181,7 +178,7 @@ public class categoreyfragment extends Fragment {
 
                 List<ChildItem> list = new ArrayList<>();
 
-                String url = "http://clothesshopapi2.azurewebsites.net/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=";
+                String url = "http://hwayadesigns-001-site3.itempurl.com/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=";
 
                 JsonArrayRequest request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
                     @Override
@@ -195,11 +192,11 @@ public class categoreyfragment extends Fragment {
                                 int productprice = jsonObject.getInt("productPrice");
                                 int percentage = jsonObject.getInt("ProductOfferPercentage");
                                 String imagemodel = jsonObject.getString("imgName");
-                                String myImg = "http://clothesshopapi2.azurewebsites.net/img/products/" + imagemodel;
+                                String myImg = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imagemodel;
                                 String imgbrands = jsonObject.getString("ImgBrands");
-                                String myImg2 = "http://clothesshopapi2.azurewebsites.net/img/products/" + imgbrands;
+                                String myImg2 = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imgbrands;
                                 int brandid = jsonObject.getInt("brandsId");
-                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, myImg2, productprice));
+                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, productprice));
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -238,7 +235,7 @@ public class categoreyfragment extends Fragment {
 
                 List<ChildItem> list = new ArrayList<>();
 
-                String url = "http://clothesshopapi2.azurewebsites.net/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=";
+                String url = "http://hwayadesigns-001-site3.itempurl.com/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=";
 
                 JsonArrayRequest request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
                     @Override
@@ -252,11 +249,11 @@ public class categoreyfragment extends Fragment {
                                 int productprice = jsonObject.getInt("productPrice");
                                 int percentage = jsonObject.getInt("ProductOfferPercentage");
                                 String imagemodel = jsonObject.getString("imgName");
-                                String myImg = "http://clothesshopapi2.azurewebsites.net/img/products/" + imagemodel;
+                                String myImg = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imagemodel;
                                 String imgbrands = jsonObject.getString("ImgBrands");
-                                String myImg2 = "http://clothesshopapi2.azurewebsites.net/img/products/" + imgbrands;
+                                String myImg2 = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imgbrands;
                                 int brandid = jsonObject.getInt("brandsId");
-                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, myImg2, productprice));
+                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg,  productprice));
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -286,7 +283,7 @@ public class categoreyfragment extends Fragment {
             brandNames.clear();
             brandList.add(0, new BrandModel(null, "ALL"));
             brandNames.add(brandList.get(0).brandName);
-            String urlBrand = "http://clothesshopapi2.azurewebsites.net/api/Brands/list";
+            String urlBrand = "http://hwayadesigns-001-site3.itempurl.com/api/Brands/list";
             JsonArrayRequest requestBrand = new JsonArrayRequest(urlBrand, new Response.Listener<JSONArray>() {
                 @Override
                 public void onResponse(JSONArray response) {
@@ -309,7 +306,7 @@ public class categoreyfragment extends Fragment {
                     }
 
                     ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), R.layout.support_simple_spinner_dropdown_item, brandNames);
-                    adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                     brands.setAdapter(adapter);
 
 
@@ -317,7 +314,7 @@ public class categoreyfragment extends Fragment {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                             if (position == 0) {
-                                String url = "http://clothesshopapi2.azurewebsites.net/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=" + brandList.get(0).ID;
+                                String url = "http://hwayadesigns-001-site3.itempurl.com/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=" + brandList.get(0).ID;
                                 JsonArrayRequest request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
                                     @Override
                                     public void onResponse(JSONArray response) {
@@ -331,11 +328,11 @@ public class categoreyfragment extends Fragment {
                                                 int productprice = jsonObject.getInt("productPrice");
                                                 int percentage = jsonObject.getInt("ProductOfferPercentage");
                                                 String imagemodel = jsonObject.getString("imgName");
-                                                String myImg = "http://clothesshopapi2.azurewebsites.net/img/products/" + imagemodel;
+                                                String myImg = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imagemodel;
                                                 String imgbrands = jsonObject.getString("ImgBrands");
-                                                String myImg2 = "http://clothesshopapi2.azurewebsites.net/img/products/" + imgbrands;
+                                                String myImg2 = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imgbrands;
                                                 int brandid = jsonObject.getInt("brandsId");
-                                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, myImg2, productprice));
+                                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg,  productprice));
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
                                             }
@@ -361,7 +358,7 @@ public class categoreyfragment extends Fragment {
                                                     if (list.get(i).getProductname().startsWith(text)) {
 
                                                         finalText = list.get(i).getProductname();
-                                                        listTemp.add(new ChildItem(list.get(i).getMainid(), list.get(i).getPercentage(), list.get(i).getBrandid(), finalText, list.get(i).getImagemodel(), list.get(i).getLogobrand(), list.get(i).getPrice()));
+                                                        listTemp.add(new ChildItem(list.get(i).getMainid(), list.get(i).getPercentage(), list.get(i).getBrandid(), finalText, list.get(i).getImagemodel(),  list.get(i).getPrice()));
                                                     }
 
                                                 }
@@ -391,7 +388,7 @@ public class categoreyfragment extends Fragment {
                                 searchText.setText(null);
 
                             } else {
-                                String url = "http://clothesshopapi2.azurewebsites.net/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=" + brandList.get(position).ID;
+                                String url = "http://hwayadesigns-001-site3.itempurl.com/api/Product/MainCategory?mainCategoryId=" + genderChoice + "&CategoryId=&brandsId=" + brandList.get(position).ID;
                                 JsonArrayRequest request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
                                     @Override
                                     public void onResponse(JSONArray response) {
@@ -405,11 +402,11 @@ public class categoreyfragment extends Fragment {
                                                 int productprice = jsonObject.getInt("productPrice");
                                                 int percentage = jsonObject.getInt("ProductOfferPercentage");
                                                 String imagemodel = jsonObject.getString("imgName");
-                                                String myImg = "http://clothesshopapi2.azurewebsites.net/img/prodcuts/" + imagemodel;
+                                                String myImg = "http://hwayadesigns-001-site3.itempurl.com/img/prodcuts/" + imagemodel;
                                                 String imgbrands = jsonObject.getString("ImgBrands");
-                                                String myImg2 = "http://clothesshopapi2.azurewebsites.net/img/prodcuts/" + imgbrands;
+                                                String myImg2 = "http://hwayadesigns-001-site3.itempurl.com/img/prodcuts/" + imgbrands;
                                                 int brandid = jsonObject.getInt("brandsId");
-                                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, myImg2, productprice));
+                                                list.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, productprice));
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
                                             }
@@ -435,7 +432,7 @@ public class categoreyfragment extends Fragment {
                                                     if (list.get(i).getProductname().startsWith(text)) {
 
                                                         finalText = list.get(i).getProductname();
-                                                        listTemp.add(new ChildItem(list.get(i).getMainid(), list.get(i).getPercentage(), list.get(i).getBrandid(), finalText, list.get(i).getImagemodel(), list.get(i).getLogobrand(), list.get(i).getPrice()));
+                                                        listTemp.add(new ChildItem(list.get(i).getMainid(), list.get(i).getPercentage(), list.get(i).getBrandid(), finalText, list.get(i).getImagemodel(), list.get(i).getPrice()));
                                                     }
 
                                                 }
@@ -503,7 +500,7 @@ public class categoreyfragment extends Fragment {
                     System.out.println("Navigated from home");
                     brandList2.add(0, new BrandModel(null, "ALL"));
                     brandNames2.add(brandList2.get(0).brandName);
-                    String urlBrand2 = "http://clothesshopapi2.azurewebsites.net/api/Brands/list";
+                    String urlBrand2 = "http://hwayadesigns-001-site3.itempurl.com/api/Brands/list";
                     JsonArrayRequest requestBrand2 = new JsonArrayRequest(urlBrand2, new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {
@@ -526,11 +523,8 @@ public class categoreyfragment extends Fragment {
                                 }
                             }
 
-                            brands.setSelection(indicator);
+                            brands.setSelection(position);
 
-//                            ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), R.layout.support_simple_spinner_dropdown_item, brandNames2);
-//                            adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-//                            brands.setAdapter(adapter);
 
                         }
                     }, new Response.ErrorListener() {
@@ -538,54 +532,7 @@ public class categoreyfragment extends Fragment {
                         public void onErrorResponse(VolleyError error) {
 
                         }
-                    })
-                    {
-                        @Override
-                        protected Response<JSONArray> parseNetworkResponse(NetworkResponse response) {
-                            try {
-                                Cache.Entry cacheEntry = HttpHeaderParser.parseCacheHeaders(response);
-                                if (cacheEntry == null) {
-                                    cacheEntry = new Cache.Entry();
-                                }
-                                final long cacheHitButRefreshed = 3 * 60 * 1000; // in 3 minutes cache will be hit, but also refreshed on background
-                                final long cacheExpired = 24 * 60 * 60 * 1000; // in 24 hours this cache entry expires completely
-                                long now = System.currentTimeMillis();
-                                final long softExpire = now + cacheHitButRefreshed;
-                                final long ttl = now + cacheExpired;
-                                cacheEntry.data = response.data;
-                                cacheEntry.softTtl = softExpire;
-                                cacheEntry.ttl = ttl;
-                                String headerValue;
-                                headerValue = response.headers.get("Date");
-                                if (headerValue != null) {
-                                    cacheEntry.serverDate = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                                }
-                                headerValue = response.headers.get("Last-Modified");
-                                if (headerValue != null) {
-                                    cacheEntry.lastModified = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                                }
-                                cacheEntry.responseHeaders = response.headers;
-                                final String jsonString = new String(response.data,
-                                        HttpHeaderParser.parseCharset(response.headers));
-                                return Response.success(new JSONArray(jsonString), cacheEntry);
-                            } catch (UnsupportedEncodingException e) {
-                                return Response.error(new ParseError(e));
-                            } catch (JSONException e) {
-                                return Response.error(new ParseError(e));
-                            }
-                        }
-
-
-                        @Override
-                        public void deliverError(VolleyError error) {
-                            super.deliverError(error);
-                        }
-
-                        @Override
-                        protected VolleyError parseNetworkError(VolleyError volleyError) {
-                            return super.parseNetworkError(volleyError);
-                        }
-                    };
+                    });
                     RequestQueue requestQueue1 = Volley.newRequestQueue(getContext());
                     requestQueue1.add(requestBrand2);
 
@@ -609,7 +556,7 @@ public class categoreyfragment extends Fragment {
             headers.setAdapter(searchItemsAdapter);
 
 
-            String url = "http://clothesshopapi2.azurewebsites.net/api/Product/MainCategory?mainCategoryId=&CategoryId=&brandsId=";
+            String url = "http://hwayadesigns-001-site3.itempurl.com/api/Product/MainCategory?mainCategoryId=&CategoryId=&brandsId=";
 
             request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
                 @Override
@@ -624,11 +571,11 @@ public class categoreyfragment extends Fragment {
                             int productprice = jsonObject.getInt("productPrice");
                             int percentage = jsonObject.getInt("ProductOfferPercentage");
                             String imagemodel = jsonObject.getString("imgName");
-                            String myImg = "http://clothesshopapi2.azurewebsites.net/img/products/" + imagemodel;
+                            String myImg = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imagemodel;
                             String imgbrands = jsonObject.getString("ImgBrands");
-                            String myImg2 = "http://clothesshopapi2.azurewebsites.net/img/products/" + imgbrands;
+                            String myImg2 = "http://hwayadesigns-001-site3.itempurl.com/img/products/" + imgbrands;
                             int brandid = jsonObject.getInt("brandsId");
-                            itemList.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, myImg2, productprice));
+                            itemList.add(new ChildItem(mainproduct, percentage, brandid, productname, myImg, productprice));
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -644,58 +591,11 @@ public class categoreyfragment extends Fragment {
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            }) {
-                @Override
-                protected Response<JSONArray> parseNetworkResponse(NetworkResponse response) {
-                    try {
-                        Cache.Entry cacheEntry = HttpHeaderParser.parseCacheHeaders(response);
-                        if (cacheEntry == null) {
-                            cacheEntry = new Cache.Entry();
-                        }
-                        final long cacheHitButRefreshed = 3 * 60 * 1000; // in 3 minutes cache will be hit, but also refreshed on background
-                        final long cacheExpired = 24 * 60 * 60 * 1000; // in 24 hours this cache entry expires completely
-                        long now = System.currentTimeMillis();
-                        final long softExpire = now + cacheHitButRefreshed;
-                        final long ttl = now + cacheExpired;
-                        cacheEntry.data = response.data;
-                        cacheEntry.softTtl = softExpire;
-                        cacheEntry.ttl = ttl;
-                        String headerValue;
-                        headerValue = response.headers.get("Date");
-                        if (headerValue != null) {
-                            cacheEntry.serverDate = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        headerValue = response.headers.get("Last-Modified");
-                        if (headerValue != null) {
-                            cacheEntry.lastModified = HttpHeaderParser.parseDateAsEpoch(headerValue);
-                        }
-                        cacheEntry.responseHeaders = response.headers;
-                        final String jsonString = new String(response.data,
-                                HttpHeaderParser.parseCharset(response.headers));
-                        return Response.success(new JSONArray(jsonString), cacheEntry);
-                    } catch (UnsupportedEncodingException e) {
-                        return Response.error(new ParseError(e));
-                    } catch (JSONException e) {
-                        return Response.error(new ParseError(e));
-                    }
-                }
-
-
-                @Override
-                public void deliverError(VolleyError error) {
-                    super.deliverError(error);
-                }
-
-                @Override
-                protected VolleyError parseNetworkError(VolleyError volleyError) {
-                    return super.parseNetworkError(volleyError);
-                }
-            };
+            });
 
             requestQueue = Volley.newRequestQueue(getContext());
             requestQueue.add(request);
         }
-
 
         return v;
 
@@ -740,26 +640,31 @@ public class categoreyfragment extends Fragment {
                         gender = "1";
                         System.out.println(gender);
                         if (items.get(position).equals("Top")) {
-                            showtext.setText("Top");
 
                             clothingType = "2";
                             System.out.println(clothingType);
                             int brandChoice = categoreyfragment.this.brands.getSelectedItemPosition();
-                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView);
+                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView,searchitemsAdapter.this);
+
+
+
                         } else if (items.get(position).equals("Pants")) {
-                            showtext.setText("Pants");
+
 
                             clothingType = "4";
                             System.out.println(clothingType);
                             int brandChoice = categoreyfragment.this.brands.getSelectedItemPosition();
-                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView);
+                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView, searchitemsAdapter.this);
+
+
                         } else if (items.get(position).equals("Shoes")) {
-                            showtext.setText("Shoes");
+
 
                             clothingType = "1";
                             System.out.println(clothingType);
                             int brandChoice = categoreyfragment.this.brands.getSelectedItemPosition();
-                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView);
+                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView, searchitemsAdapter.this);
+
                         }
 
                     }
@@ -769,43 +674,44 @@ public class categoreyfragment extends Fragment {
                         System.out.println(gender);
 
                         if (items.get(position).equals("Top")) {
-                            showtext.setText("Top");
+
 
                             clothingType = "9";
                             System.out.println(clothingType);
                             int brandChoice = categoreyfragment.this.brands.getSelectedItemPosition();
-                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView);
-//                            System.out.println(categoreyfragment.this.brands.getItemAtPosition(0).toString());
+                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView, searchitemsAdapter.this);
 
 
                         } else if (items.get(position).equals("Pants")) {
-                            showtext.setText("Pants");
+
 
                             clothingType = "12";
                             System.out.println(clothingType);
                             int brandChoice = categoreyfragment.this.brands.getSelectedItemPosition();
-                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView);
+                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView, searchitemsAdapter.this);
+
                         } else if (items.get(position).equals("Shoes")) {
-                            showtext.setText("Shoes");
+
 
                             clothingType = "6";
                             System.out.println(clothingType);
                             int brandChoice = categoreyfragment.this.brands.getSelectedItemPosition();
-                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView);
+                            getCategoryResponse(gender,clothingType,String.valueOf(categoreyfragment.this.brandList.get(brandChoice).ID),request,requestQueue,category,test2,textView, searchitemsAdapter.this);
+
                         }
                     }
 
                     else if (textView.getText().toString().equals("CHILDREN")) {
                         if (items.get(position).equals("Top")) {
-                            showtext.setText("Top");
+
 
                         }
                         else if (items.get(position).equals("Pants")) {
-                            showtext.setText("Pants");
+
 
                         }
                         else if (items.get(position).equals("Shoes")) {
-                            showtext.setText("Shoes");
+
 
                         }
                     }
@@ -836,9 +742,9 @@ public class categoreyfragment extends Fragment {
 
 
     // Function Responsible for finding the appropriate response according to the filter used.
-    public void getCategoryResponse (String gender, String clothingType,String brandName,JsonArrayRequest request, RequestQueue requestQueue, RecyclerView category, List<ChildItem> test2, TextView textView) {
+    public void getCategoryResponse(String gender, String clothingType, String brandName, JsonArrayRequest request, RequestQueue requestQueue, RecyclerView category, List<ChildItem> test2, TextView textView, searchitemsAdapter searchitemsAdapter) {
 
-        String url="http://clothesshopapi2.azurewebsites.net/api/Product/MainCategory?mainCategoryId="+gender+"&CategoryId="+clothingType+"&brandsId="+brandName;
+        String url="http://hwayadesigns-001-site3.itempurl.com/api/Product/MainCategory?mainCategoryId="+gender+"&CategoryId="+clothingType+"&brandsId="+brandName;
         request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -851,16 +757,17 @@ public class categoreyfragment extends Fragment {
                         int productprice=jsonObject.getInt("productPrice");
                         int percentage=jsonObject.getInt("ProductOfferPercentage");
                         String imagemodel=jsonObject.getString("imgName");
-                        String myImg = "http://clothesshopapi2.azurewebsites.net/img/products/"+imagemodel;
+                        String myImg = "http://hwayadesigns-001-site3.itempurl.com/img/products/"+imagemodel;
                         String imgbrands=jsonObject.getString("ImgBrands");
-                        String myImg2 = "http://clothesshopapi2.azurewebsites.net/img/products/"+imgbrands;
+                        String myImg2 = "http://hwayadesigns-001-site3.itempurl.com/img/products/"+imgbrands;
                         int brandid=jsonObject.getInt("brandsId");
-                        itemList.add(new ChildItem(mainproduct,percentage,brandid,productname,myImg,myImg2,productprice));
+                        itemList.add(new ChildItem(mainproduct,percentage,brandid,productname,myImg,productprice));
                     }catch (JSONException e){e.printStackTrace();}
 
                 }
-                searchitemsAdapter searchItemsAdapter = new searchitemsAdapter(items, itemList, headers, categories, textView);
-                headers.setAdapter(searchItemsAdapter);
+//                searchitemsAdapter searchItemsAdapter = new searchitemsAdapter(items, itemList, headers, categories, textView);
+                searchitemsAdapter.notifyDataSetChanged();
+//                headers.setAdapter(searchItemsAdapter);
 
                 ParentItemAdapter parentItemAdapter = new ParentItemAdapter(itemList);
                 category.setLayoutManager(new GridLayoutManager(getContext(), 2, RecyclerView.VERTICAL, false));
