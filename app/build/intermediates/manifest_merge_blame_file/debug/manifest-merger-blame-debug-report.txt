@@ -1,0 +1,657 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.elmoledmol.www"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+13-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:7:5-76
+13-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:7:22-73
+14
+15    <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+16    <permission
+16-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:7:5-9:47
+17        android:name="com.elmoledmol.www.permission.C2D_MESSAGE"
+17-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:8:9-63
+18        android:protectionLevel="signature" />
+18-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:9:9-44
+19
+20    <uses-permission android:name="com.elmoledmol.www.permission.C2D_MESSAGE" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+20-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:11:5-79
+20-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:11:22-76
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+21-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:17:5-82
+21-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:17:22-79
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:18:5-68
+22-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:18:22-65
+23    <!--
+24 Required so the device vibrates on receiving a push notification.
+25         Vibration settings of the device still apply.
+26    -->
+27    <uses-permission android:name="android.permission.VIBRATE" />
+27-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:23:5-66
+27-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:23:22-63
+28    <!--
+29 Use to restore notifications the user hasn't interacted with.
+30         They could be missed notifications if the user reboots their device if this isn't in place.
+31    -->
+32    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+32-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:29:5-81
+32-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:29:22-78
+33    <!-- Samsung -->
+34    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+34-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:31:5-86
+34-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:31:22-83
+35    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+35-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:32:5-87
+35-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:32:22-84
+36    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+36-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:33:5-81
+36-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:33:22-78
+37    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+37-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:34:5-83
+37-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:34:22-80
+38    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+38-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:35:5-88
+38-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:35:22-85
+39    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+39-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:36:5-92
+39-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:36:22-89
+40    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+40-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:37:5-84
+40-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:37:22-81
+41    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+41-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:38:5-83
+41-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:38:22-80
+42    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+42-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:39:5-91
+42-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:39:22-88
+43    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+43-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:40:5-92
+43-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:40:22-89
+44    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+44-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:41:5-93
+44-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:41:22-90
+45    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+45-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:42:5-73
+45-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:42:22-70
+46    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+46-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:43:5-82
+46-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:43:22-79
+47    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+47-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:44:5-83
+47-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:44:22-80
+48    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+48-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:45:5-88
+48-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:45:22-85
+49    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" /> <!-- Include required permissions for Advertising Id -->
+49-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:46:5-89
+49-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:46:22-86
+50    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+50-->[com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:23:5-79
+50-->[com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:23:22-76
+51    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+51-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:28:5-77
+51-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:28:22-74
+52
+53    <application
+53-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:9:5-36:19
+54        android:allowBackup="true"
+54-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:10:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cb5f1a68a7e4e839474788d2a3991858\core-1.6.0\AndroidManifest.xml:24:18-86
+56        android:debuggable="true"
+57        android:extractNativeLibs="false"
+58        android:icon="@mipmap/ic_launcher"
+58-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:11:9-43
+59        android:label="@string/app_name"
+59-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:12:9-41
+60        android:roundIcon="@mipmap/ic_launcher_round"
+60-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:13:9-54
+61        android:supportsRtl="true"
+61-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:14:9-35
+62        android:testOnly="true"
+63        android:theme="@style/Theme.Elmoledmol"
+63-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:15:9-48
+64        android:usesCleartextTraffic="true" >
+64-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:16:9-44
+65        <activity android:name="com.elmoledmol.www.showmyaddresses" />
+65-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:17:9-62
+65-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:17:19-50
+66        <activity android:name="com.elmoledmol.www.showimage" />
+66-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:18:9-47
+66-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:18:19-44
+67        <activity android:name="com.elmoledmol.www.sellalltop" />
+67-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:19:9-48
+67-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:19:19-45
+68        <activity android:name="com.elmoledmol.www.AppInfoActivity" />
+68-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:20:9-52
+68-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:20:19-50
+69        <activity android:name="com.elmoledmol.www.processsuccess" />
+69-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:21:9-52
+69-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:21:19-49
+70        <activity android:name="com.elmoledmol.www.ordercheckout" />
+70-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:22:9-51
+70-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:22:19-48
+71        <activity android:name="com.elmoledmol.www.myCartActivity" />
+71-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:23:9-52
+71-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:23:19-49
+72        <activity android:name="com.elmoledmol.www.seeAllActivity" />
+72-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:24:9-52
+72-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:24:19-49
+73        <activity android:name="com.elmoledmol.www.productInformation" />
+73-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:25:9-56
+73-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:25:19-53
+74        <activity android:name="com.elmoledmol.www.MainActivity" />
+74-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:26:9-50
+74-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:26:19-47
+75        <activity android:name="com.elmoledmol.www.seeAllSearch" />
+75-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:27:9-50
+75-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:27:19-47
+76        <activity
+76-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:28:9-35:20
+77            android:name="com.elmoledmol.www.SplashLoginActivity"
+77-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:28:19-54
+78            android:exported="true" >
+78-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:29:13-36
+79            <intent-filter>
+79-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:30:13-34:29
+80                <action android:name="android.intent.action.MAIN" />
+80-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:31:17-69
+80-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:31:25-66
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+82-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:33:17-77
+82-->D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:33:27-74
+83            </intent-filter>
+84        </activity>
+85
+86        <provider
+86-->[net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:9:9-17:20
+87            android:name="androidx.startup.InitializationProvider"
+87-->[net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:10:13-67
+88            android:authorities="com.elmoledmol.www.androidx-startup"
+88-->[net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:11:13-68
+89            android:exported="false" >
+89-->[net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:12:13-37
+90            <meta-data
+90-->[net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:14:13-16:52
+91                android:name="net.danlew.android.joda.JodaTimeInitializer"
+91-->[net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:15:17-75
+92                android:value="androidx.startup" />
+92-->[net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:16:17-49
+93            <meta-data
+93-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:36:13-38:52
+94                android:name="androidx.work.WorkManagerInitializer"
+94-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:37:17-68
+95                android:value="androidx.startup" />
+95-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:38:17-49
+96        </provider>
+97
+98        <receiver
+98-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:49:9-59:20
+99            android:name="com.onesignal.FCMBroadcastReceiver"
+99-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:50:13-62
+100            android:permission="com.google.android.c2dm.permission.SEND" >
+100-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:51:13-73
+101
+102            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+103            <intent-filter android:priority="999" >
+103-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:54:13-58:29
+103-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:54:28-50
+104                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+104-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:55:17-81
+104-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:55:25-78
+105
+106                <category android:name="com.elmoledmol.www" />
+106-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:57:17-61
+106-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:57:27-58
+107            </intent-filter>
+108        </receiver>
+109
+110        <service
+110-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:61:9-67:19
+111            android:name="com.onesignal.HmsMessageServiceOneSignal"
+111-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:62:13-68
+112            android:exported="false" >
+112-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:63:13-37
+113            <intent-filter>
+113-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:64:13-66:29
+114                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+114-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:65:17-81
+114-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:65:25-78
+115            </intent-filter>
+116        </service>
+117
+118        <activity
+118-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:69:9-76:20
+119            android:name="com.onesignal.NotificationOpenedActivityHMS"
+119-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:70:13-71
+120            android:noHistory="true"
+120-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:71:13-37
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+121-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:72:13-72
+122            <intent-filter>
+122-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:73:13-75:29
+123                <action android:name="android.intent.action.VIEW" />
+123-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:74:17-69
+123-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:74:25-66
+124            </intent-filter>
+125        </activity>
+126
+127        <service android:name="com.onesignal.FCMIntentService" />
+127-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:78:9-66
+127-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:78:18-63
+128        <service
+128-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:79:9-81:72
+129            android:name="com.onesignal.FCMIntentJobService"
+129-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:80:13-61
+130            android:permission="android.permission.BIND_JOB_SERVICE" />
+130-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:81:13-69
+131        <service
+131-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:82:9-84:43
+132            android:name="com.onesignal.FocusDelaySyncService"
+132-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:83:13-63
+133            android:stopWithTask="true" />
+133-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:84:13-40
+134        <service
+134-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:85:9-87:72
+135            android:name="com.onesignal.FocusDelaySyncJobService"
+135-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:86:13-66
+136            android:permission="android.permission.BIND_JOB_SERVICE" />
+136-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:87:13-69
+137        <service
+137-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:88:9-90:43
+138            android:name="com.onesignal.SyncService"
+138-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:89:13-53
+139            android:stopWithTask="true" />
+139-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:90:13-40
+140        <service
+140-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:91:9-93:72
+141            android:name="com.onesignal.SyncJobService"
+141-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:92:13-56
+142            android:permission="android.permission.BIND_JOB_SERVICE" />
+142-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:93:13-69
+143
+144        <activity
+144-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:95:9-97:75
+145            android:name="com.onesignal.PermissionsActivity"
+145-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:96:13-61
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+146-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:97:13-72
+147
+148        <receiver android:name="com.onesignal.NotificationDismissReceiver" />
+148-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:99:9-78
+148-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:99:19-75
+149        <receiver android:name="com.onesignal.BootUpReceiver" >
+149-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:100:9-105:20
+149-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:100:19-62
+150            <intent-filter>
+150-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:101:13-104:29
+151                <action android:name="android.intent.action.BOOT_COMPLETED" />
+151-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:102:17-79
+151-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:102:25-76
+152                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+152-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:103:17-82
+152-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:103:25-79
+153            </intent-filter>
+154        </receiver>
+155        <receiver android:name="com.onesignal.UpgradeReceiver" >
+155-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:106:9-110:20
+155-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:106:19-63
+156            <intent-filter>
+156-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:107:13-109:29
+157                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+157-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:108:17-84
+157-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:108:25-81
+158            </intent-filter>
+159        </receiver>
+160
+161        <activity
+161-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:112:9-115:75
+162            android:name="com.onesignal.NotificationOpenedReceiver"
+162-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:113:13-68
+163            android:noHistory="true"
+163-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:114:13-37
+164            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+164-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:115:13-72
+165        <!--
+166             FirebaseMessagingService performs security checks at runtime,
+167             but set to not exported to explicitly avoid allowing another app to call it.
+168        -->
+169        <service
+169-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
+170            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+170-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
+171            android:directBootAware="true"
+171-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
+172            android:exported="false" >
+172-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
+173            <intent-filter android:priority="-500" >
+173-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:13-34:29
+173-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:28-51
+174                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+174-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:33:17-78
+174-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:33:25-75
+175            </intent-filter>
+176        </service>
+177        <service
+177-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:36:9-42:19
+178            android:name="com.google.firebase.components.ComponentDiscoveryService"
+178-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:37:13-84
+179            android:directBootAware="true"
+179-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+180            android:exported="false" >
+180-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:38:13-37
+181            <meta-data
+181-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
+182                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+182-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
+184            <meta-data
+184-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
+185                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+185-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
+186                android:value="com.google.firebase.components.ComponentRegistrar" />
+186-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
+187            <meta-data
+187-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+188                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+188-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+189                android:value="com.google.firebase.components.ComponentRegistrar" />
+189-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+190            <meta-data
+190-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+191                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+191-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+192                android:value="com.google.firebase.components.ComponentRegistrar" />
+192-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+193        </service>
+194
+195        <receiver
+195-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
+196            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+196-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
+197            android:exported="true"
+197-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
+198            android:permission="com.google.android.c2dm.permission.SEND" >
+198-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
+199            <intent-filter>
+199-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
+200                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+200-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:55:17-81
+200-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:55:25-78
+201            </intent-filter>
+202        </receiver>
+203
+204        <activity
+204-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+205            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+205-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+206            android:exported="false"
+206-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+207            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+207-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+208
+209        <provider
+209-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+210            android:name="com.google.firebase.provider.FirebaseInitProvider"
+210-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+211            android:authorities="com.elmoledmol.www.firebaseinitprovider"
+211-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+212            android:exported="false"
+212-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+213            android:initOrder="100" />
+213-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+214
+215        <meta-data
+215-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+216            android:name="com.google.android.gms.version"
+216-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+217            android:value="@integer/google_play_services_version" />
+217-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+218
+219        <service
+219-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:41:9-47:35
+220            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+220-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:42:13-88
+221            android:directBootAware="false"
+221-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:43:13-44
+222            android:enabled="@bool/enable_system_alarm_service_default"
+222-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:44:13-72
+223            android:exported="false" />
+223-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:45:13-37
+224        <service
+224-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:48:9-54:35
+225            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+225-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:49:13-84
+226            android:directBootAware="false"
+226-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:50:13-44
+227            android:enabled="@bool/enable_system_job_service_default"
+227-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:51:13-70
+228            android:exported="true"
+228-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:52:13-36
+229            android:permission="android.permission.BIND_JOB_SERVICE" />
+229-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:53:13-69
+230        <service
+230-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:55:9-61:35
+231            android:name="androidx.work.impl.foreground.SystemForegroundService"
+231-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:56:13-81
+232            android:directBootAware="false"
+232-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:57:13-44
+233            android:enabled="@bool/enable_system_foreground_service_default"
+233-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:58:13-77
+234            android:exported="false" />
+234-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:59:13-37
+235
+236        <receiver
+236-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:63:9-68:35
+237            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+237-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:64:13-88
+238            android:directBootAware="false"
+238-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:65:13-44
+239            android:enabled="true"
+239-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:66:13-35
+240            android:exported="false" />
+240-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:67:13-37
+241        <receiver
+241-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:69:9-79:20
+242            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+242-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:70:13-106
+243            android:directBootAware="false"
+243-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:71:13-44
+244            android:enabled="false"
+244-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:72:13-36
+245            android:exported="false" >
+245-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:73:13-37
+246            <intent-filter>
+246-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:75:13-78:29
+247                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+247-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:76:17-87
+247-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:76:25-84
+248                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+248-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:77:17-90
+248-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:77:25-87
+249            </intent-filter>
+250        </receiver>
+251        <receiver
+251-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:80:9-90:20
+252            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+252-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:81:13-104
+253            android:directBootAware="false"
+253-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:82:13-44
+254            android:enabled="false"
+254-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:83:13-36
+255            android:exported="false" >
+255-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:84:13-37
+256            <intent-filter>
+256-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:86:13-89:29
+257                <action android:name="android.intent.action.BATTERY_OKAY" />
+257-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:87:17-77
+257-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:87:25-74
+258                <action android:name="android.intent.action.BATTERY_LOW" />
+258-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:88:17-76
+258-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:88:25-73
+259            </intent-filter>
+260        </receiver>
+261        <receiver
+261-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:91:9-101:20
+262            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+262-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:92:13-104
+263            android:directBootAware="false"
+263-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:93:13-44
+264            android:enabled="false"
+264-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:94:13-36
+265            android:exported="false" >
+265-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:95:13-37
+266            <intent-filter>
+266-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:97:13-100:29
+267                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+267-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:98:17-83
+267-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:98:25-80
+268                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+268-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:99:17-82
+268-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:99:25-79
+269            </intent-filter>
+270        </receiver>
+271        <receiver
+271-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:102:9-111:20
+272            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+272-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:103:13-103
+273            android:directBootAware="false"
+273-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:104:13-44
+274            android:enabled="false"
+274-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:105:13-36
+275            android:exported="false" >
+275-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:106:13-37
+276            <intent-filter>
+276-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:108:13-110:29
+277                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+277-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:109:17-79
+277-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:109:25-76
+278            </intent-filter>
+279        </receiver>
+280        <receiver
+280-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:112:9-123:20
+281            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+281-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:113:13-88
+282            android:directBootAware="false"
+282-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:114:13-44
+283            android:enabled="false"
+283-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:115:13-36
+284            android:exported="false" >
+284-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:116:13-37
+285            <intent-filter>
+285-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:118:13-122:29
+286                <action android:name="android.intent.action.BOOT_COMPLETED" />
+286-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:102:17-79
+286-->[com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:102:25-76
+287                <action android:name="android.intent.action.TIME_SET" />
+287-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:120:17-73
+287-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:120:25-70
+288                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+288-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:121:17-81
+288-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:121:25-78
+289            </intent-filter>
+290        </receiver>
+291        <receiver
+291-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:124:9-133:20
+292            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+292-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:125:13-99
+293            android:directBootAware="false"
+293-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:126:13-44
+294            android:enabled="@bool/enable_system_alarm_service_default"
+294-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:127:13-72
+295            android:exported="false" >
+295-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:128:13-37
+296            <intent-filter>
+296-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:130:13-132:29
+297                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+297-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:131:17-98
+297-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:131:25-95
+298            </intent-filter>
+299        </receiver>
+300        <receiver
+300-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:134:9-144:20
+301            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+301-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:135:13-78
+302            android:directBootAware="false"
+302-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:136:13-44
+303            android:enabled="true"
+303-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:137:13-35
+304            android:exported="true"
+304-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:138:13-36
+305            android:permission="android.permission.DUMP" >
+305-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:139:13-57
+306            <intent-filter>
+306-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:141:13-143:29
+307                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+307-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:142:17-88
+307-->[androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:142:25-85
+308            </intent-filter>
+309        </receiver>
+310
+311        <provider
+311-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+312            android:name="com.squareup.picasso.PicassoProvider"
+312-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+313            android:authorities="com.elmoledmol.www.com.squareup.picasso"
+313-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+314            android:exported="false" />
+314-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+315
+316        <service
+316-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+317            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+317-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+318            android:exported="false" >
+318-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+319            <meta-data
+319-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+320                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+320-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+321                android:value="cct" />
+321-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+322        </service>
+323        <service
+323-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+324            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+324-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+325            android:exported="false"
+325-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+326            android:permission="android.permission.BIND_JOB_SERVICE" >
+326-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+327        </service>
+328
+329        <receiver
+329-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+330            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+330-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+331            android:exported="false" />
+331-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+332
+333        <service
+333-->[androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:25:9-28:40
+334            android:name="androidx.room.MultiInstanceInvalidationService"
+334-->[androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:26:13-74
+335            android:directBootAware="true"
+335-->[androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:27:13-43
+336            android:exported="false" />
+336-->[androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:28:13-37
+337    </application>
+338
+339</manifest>

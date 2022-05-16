@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.MoeidHeidari:banner:1.04@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f3152c06dded2f64b75dfff41e09f04e/jetified-banner-1.04/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f3152c06dded2f64b75dfff41e09f04e/jetified-banner-1.04/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f3152c06dded2f64b75dfff41e09f04e/jetified-banner-1.04/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.MoeidHeidari/banner/1.04/41ad2501df466d6bcf28c259f47b7dc6454036e0/banner-1.04-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
