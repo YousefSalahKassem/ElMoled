@@ -36,7 +36,7 @@ List<cartinheret> list;
 holder.product.setText(list.get(position).getName());
 Picasso.get().load(list.get(position).getImages()).into(holder.imageView);
 holder.quantity.setText("x"+String.valueOf(list.get(position).getQunatity()));
-holder.price.setText("EGP"+String.valueOf(list.get(position).getPrice()));
+holder.price.setText("$"+String.valueOf(list.get(position).getPrice()));
 
 //        Picasso.get().load(list.get(position).getImages()).into(holder.imageView);
     }

@@ -80,9 +80,9 @@ public class ordercheckout extends AppCompatActivity {
         for (int i = 0; i < listCart.size(); i++) {
             t += listCart.get(i).getPrice();
         }
-        subtotal.setText("EGP " + String.valueOf(t));
-        shippingprice.setText("EGP 10.00");
-        total.setText("EGP " + String.valueOf(t+10));
+        subtotal.setText("$ " + String.valueOf(t));
+        shippingprice.setText("$ 10.00");
+        total.setText("$ " + String.valueOf(t+10));
 
         Intent intent = getIntent();
         int mainID = intent.getIntExtra("mainProductId", 0);
@@ -225,7 +225,7 @@ public class ordercheckout extends AppCompatActivity {
 
                             listHistory.clear();
                             listHistory.addAll(loadDataHistory());
-                            listHistory.add(new orderhistoryinheret(java.time.LocalDate.now().toString(),"EGP "+ finalT,"Processed","Order #"+formatted));
+                            listHistory.add(new orderhistoryinheret(java.time.LocalDate.now().toString(),"$ "+ finalT,"Processed","Order #"+formatted));
                             saveDataHistory(listHistory);
 
                             System.out.println(listHistory.get(0).ordernumber);

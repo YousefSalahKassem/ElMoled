@@ -42,13 +42,13 @@ public class ParentItemAdapter extends RecyclerView.Adapter<ParentItemAdapter.Vi
         if (ChildItemList.get(position).getPercentage() == 0) {
             holder.linearLayout.setVisibility(View.GONE);
             holder.offer.setVisibility(View.GONE);
-            holder.newPrice.setText("EGP " + String.valueOf(ChildItemList.get(position).getPrice()));
+            holder.newPrice.setText("$ " + String.valueOf(ChildItemList.get(position).getPrice()));
         } else {
             holder.linearLayout.setVisibility(View.VISIBLE);
             holder.offer.setVisibility(View.VISIBLE);
             holder.discount.setText(String.valueOf(ChildItemList.get(position).getPercentage() + "%"));
-            holder.newPrice.setText("EGP " + String.valueOf(x));
-            holder.oldPrice.setText("EGP " + String.valueOf(ChildItemList.get(position).getPrice()));
+            holder.newPrice.setText("$ " + String.valueOf(x));
+            holder.oldPrice.setText("$ " + String.valueOf(ChildItemList.get(position).getPrice()));
         }
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {

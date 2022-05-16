@@ -42,9 +42,9 @@ public class bookmarksfragment extends Fragment {
         cardView.setBackgroundResource(R.drawable.corner);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, RecyclerView.VERTICAL, false));
         bookmarksadapter = new bookmarksadapter(getContext(), list);
-        list.add(new featuredinheret("Long Puffer", "799.00", "899.00EFP", R.drawable.model1));
-        list.add(new featuredinheret(" Puffer", "799.00", "899.00EFP", R.drawable.model1));
-        list.add(new featuredinheret("Long r", "799.00", "899.00EFP", R.drawable.model1));
+        list.add(new featuredinheret("Long Puffer", "799.00", "899.00$", R.drawable.model1));
+        list.add(new featuredinheret(" Puffer", "799.00", "899.00$", R.drawable.model1));
+        list.add(new featuredinheret("Long r", "799.00", "899.00$", R.drawable.model1));
         list.add(new featuredinheret("Lonfer", "799.00", "", R.drawable.model1));
         list.add(new featuredinheret("Long Puffer", "799.00", "", R.drawable.model1));
         recyclerView.setAdapter(bookmarksadapter);
