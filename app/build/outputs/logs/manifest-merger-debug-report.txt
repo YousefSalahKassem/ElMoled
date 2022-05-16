@@ -1,0 +1,1113 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:2:1-20:12
+MERGED from [com.github.MoeidHeidari:banner:1.04] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\f3152c06dded2f64b75dfff41e09f04e\jetified-banner-1.04\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ec4fc34bdbf98191657667288e3345d7\navigation-ui-ktx-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\55c2fbe6b63ed0322eaaaad98a779110\navigation-ui-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\02d819833f50b7873f9049f1377c8a93\material-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e4419fdf895457b980d048b095538083\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a3276bf3f5ebccecfb8cb59df8d1c5d4\jetified-PhotoView-2.3.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:2:1-118:12
+MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\664cae71ad4ab018bdd387f3e9a9ea08\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.yahoo.mobile.client.android.util.rangeseekbar:rangeseekbar-library:0.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7206a2364c92ad7420aa2801d23b3653\jetified-rangeseekbar-library-0.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\8e86a2e4199ce1b363b87d53440c1225\jetified-rangeseekbar-library-0.3.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.Jay-Goo:RangeSeekBar:v3.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d61e9cb157d0bc6fd65f0386c929e924\jetified-RangeSeekBar-v3.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d434c3c4c3913d90bafd58a50b7dbe77\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.sothree.slidinguppanel:library:3.4.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9fde9a06304aef18ca296bb249e1f68c\jetified-library-3.4.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69e5596492027192e37bf5071e3e87df\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\66636426f88a1a84b724030fba8eb337\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\19e3e91e54661b13fbed1b1626741399\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6db4d9f79dad506fa1d9d40dbe7a4ef5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7b5fe970bf4f3baaac8387104a5cd994\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9ad48b01881c0dc232e88568898d040c\jetified-glide-4.12.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\2378eefde504afa76bccb0fc4e8f229a\navigation-fragment-ktx-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\579ea0100f43c2caa8ac06d2a15a3a3f\navigation-fragment-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7134705df49317a517b9a78790b12ef6\jetified-fragment-ktx-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:17:1-45:12
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\39a304c46e9b0c44e2e34da0e793b3fa\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\794a1765be9a87ed14806ac7d4399971\jetified-play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1a7e292c1f38905d97ce868afe6ce3a7\jetified-firebase-installations-interop-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ff1ecc5bcde7da9f7c104359030e9f5e\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e8e9f82c021a342510945d90fb5762bf\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\8a2ea319f6b87f0c01abbfdbd2c4113c\fragment-1.2.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a3a333b46dfda609fff61d3dd9a5bf3f\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\518af5b2c85463dca598e484597a7f41\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3f6b77f36a276d91ecbfbeef3fe85f44\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\adf71faf8c5b5a03c62d3cc46b103753\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ac91b7be8716835e889ca7a0c131bc4f\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b73c71d3b6a5ca8055b1905079a99d26\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\50373fbad98c5bd1249223fb7cffc730\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:17:1-147:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\26cba2260852bf33ca2f3c9de352e92f\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a5c6b469652c07abefbdccc2e54fc216\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b271f21983d0ae6482089b1e2f03c850\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\181986f2b3950a2d1e866d85844ad553\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4cd9feacc979b5675588a6731a720bc0\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b0db9684905e3a45fb069f5eb4436c18\navigation-runtime-ktx-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1973e60c37e4132f188c52604c5dea8e\navigation-runtime-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\152074e5e51f8f51d6e7a41489c8daea\jetified-activity-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1aa7a02fec05d1c160c8f7b2cf95c58f\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a5ca529dbf5008fe39e2ddca88766f04\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a796ca2fb0c1dc309ea939f9a5495a2c\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5e5cdda06ebb010105e5e89dad9c08d8\navigation-common-ktx-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b3a8eb936c08b8e62c8c2dd31f77a855\jetified-core-ktx-1.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c19c5a7c744bc15adda415373dc6f95d\transition-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\40164c3b1df1877dbcc0a4c920aef852\navigation-common-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cb5f1a68a7e4e839474788d2a3991858\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6527ada307df92a3dae253492c4b26da\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\24bfbd21f934f2251ab25c992e00a982\jetified-sdp-android-1.0.6\AndroidManifest.xml:2:1-11:12
+MERGED from [it.xabaras.android:recyclerview-swipedecorator:1.2.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6ad60ae9d0c4f08420a82a031892f706\jetified-recyclerview-swipedecorator-1.2.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e943cf680d5de67c3fd2e50e2211cfc1\jetified-circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\08c5e9d9bcf975bca54cf6e0428dde3e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7db26d8bdce45e3ab8f2610e80a944a6\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3b64075ae2dc3262c3a71ccb38eeb15a\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\36809362fa91448f86e1a3812a66c95d\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e361a61379681a4fa499e93e381e62d4\jetified-gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b6c5e6d98edda09a4bcb9a32fd8f6c8f\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\82b9366a83c2c681b6c7c776900f11b4\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\f24e06449aac34006ab31de9dd5ae6d6\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cdf144464cf99e44f436f2d415dcd481\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e745420478e2d1cdf9f87e9161a0eb1f\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\035ff0ca1f29ea65c0d91c60d9016502\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\53e5d520c6a1bfa255ccf515a6fe8e9b\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\64e617aee1a011785a9a00ca7bc2cfa6\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d539d2b80a8ddb8b1462fbb2582ab198\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1c88fc25b6a43c28c588b4f683ddfaf8\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\fe333de83be0ced6862f8cbe57f30ad5\jetified-firebase-encoders-json-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7598ff35e071c179db450b62da7d261c\sqlite-framework-2.3.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.3.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\34ed00927b683038df5ac875ad19f8ca\sqlite-2.3.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\77da4f8808824988eda80d8f8d03ba4f\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\498634f30852ca8ff1d73b867f0e5f9e\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ba1d05a7a073b29bb9b0488374fbcfcf\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\abec826891949eeb26b29443d075076d\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\0db118f3a392759edeb95f8b12838a6a\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5938735097a2e20e0beb8cc32259ddf1\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e6445de2815037da64aed35e7e784902\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\66578d29837d0137b488cb1e46754ab0\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\2ab158a2af39cbd60c632d9a3d3f8ad5\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\141b894bd90c5eef03898647a4190fcc\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:16:5-67
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:16:5-67
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:10:5-79
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:26:5-79
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:7:22-73
+application
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:9:5-36:19
+MERGED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:8:5-18:19
+MERGED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:8:5-18:19
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\02d819833f50b7873f9049f1377c8a93\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\02d819833f50b7873f9049f1377c8a93\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e4419fdf895457b980d048b095538083\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e4419fdf895457b980d048b095538083\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:48:5-116:19
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:48:5-116:19
+MERGED from [com.github.Jay-Goo:RangeSeekBar:v3.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d61e9cb157d0bc6fd65f0386c929e924\jetified-RangeSeekBar-v3.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.Jay-Goo:RangeSeekBar:v3.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d61e9cb157d0bc6fd65f0386c929e924\jetified-RangeSeekBar-v3.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.sothree.slidinguppanel:library:3.4.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9fde9a06304aef18ca296bb249e1f68c\jetified-library-3.4.0\AndroidManifest.xml:9:5-20
+MERGED from [com.sothree.slidinguppanel:library:3.4.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9fde9a06304aef18ca296bb249e1f68c\jetified-library-3.4.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9ad48b01881c0dc232e88568898d040c\jetified-glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9ad48b01881c0dc232e88568898d040c\jetified-glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:22:5-43:19
+MERGED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:22:5-43:19
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\39a304c46e9b0c44e2e34da0e793b3fa\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\39a304c46e9b0c44e2e34da0e793b3fa\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\794a1765be9a87ed14806ac7d4399971\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\794a1765be9a87ed14806ac7d4399971\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ff1ecc5bcde7da9f7c104359030e9f5e\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ff1ecc5bcde7da9f7c104359030e9f5e\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e8e9f82c021a342510945d90fb5762bf\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e8e9f82c021a342510945d90fb5762bf\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:30:5-145:19
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:30:5-145:19
+MERGED from [androidx.core:core:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cb5f1a68a7e4e839474788d2a3991858\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cb5f1a68a7e4e839474788d2a3991858\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6527ada307df92a3dae253492c4b26da\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6527ada307df92a3dae253492c4b26da\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e943cf680d5de67c3fd2e50e2211cfc1\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e943cf680d5de67c3fd2e50e2211cfc1\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\08c5e9d9bcf975bca54cf6e0428dde3e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\08c5e9d9bcf975bca54cf6e0428dde3e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\36809362fa91448f86e1a3812a66c95d\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\36809362fa91448f86e1a3812a66c95d\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e361a61379681a4fa499e93e381e62d4\jetified-gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e361a61379681a4fa499e93e381e62d4\jetified-gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:24:5-29:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cb5f1a68a7e4e839474788d2a3991858\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:15:9-48
+	android:usesCleartextTraffic
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:16:9-44
+activity#com.elmoledmol.www.showmyaddresses
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:17:9-62
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:17:19-50
+activity#com.elmoledmol.www.showimage
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:18:9-47
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:18:19-44
+activity#com.elmoledmol.www.sellalltop
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:19:9-48
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:19:19-45
+activity#com.elmoledmol.www.AppInfoActivity
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:20:9-52
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:20:19-50
+activity#com.elmoledmol.www.processsuccess
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:21:9-52
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:21:19-49
+activity#com.elmoledmol.www.ordercheckout
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:22:9-51
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:22:19-48
+activity#com.elmoledmol.www.myCartActivity
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:23:9-52
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:23:19-49
+activity#com.elmoledmol.www.seeAllActivity
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:24:9-52
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:24:19-49
+activity#com.elmoledmol.www.productInformation
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:25:9-56
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:25:19-53
+activity#com.elmoledmol.www.MainActivity
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:26:9-50
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:26:19-47
+activity#com.elmoledmol.www.seeAllSearch
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:27:9-50
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:27:19-47
+activity#com.elmoledmol.www.SplashLoginActivity
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:28:9-35:20
+	android:exported
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:29:13-36
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:28:19-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml:33:27-74
+uses-sdk
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+MERGED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:6:5-44
+MERGED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:6:5-44
+MERGED from [com.github.MoeidHeidari:banner:1.04] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\f3152c06dded2f64b75dfff41e09f04e\jetified-banner-1.04\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.MoeidHeidari:banner:1.04] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\f3152c06dded2f64b75dfff41e09f04e\jetified-banner-1.04\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ec4fc34bdbf98191657667288e3345d7\navigation-ui-ktx-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ec4fc34bdbf98191657667288e3345d7\navigation-ui-ktx-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\55c2fbe6b63ed0322eaaaad98a779110\navigation-ui-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\55c2fbe6b63ed0322eaaaad98a779110\navigation-ui-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\02d819833f50b7873f9049f1377c8a93\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\02d819833f50b7873f9049f1377c8a93\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e4419fdf895457b980d048b095538083\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e4419fdf895457b980d048b095538083\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a3276bf3f5ebccecfb8cb59df8d1c5d4\jetified-PhotoView-2.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a3276bf3f5ebccecfb8cb59df8d1c5d4\jetified-PhotoView-2.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:4:5-44
+MERGED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:4:5-44
+MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\664cae71ad4ab018bdd387f3e9a9ea08\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\664cae71ad4ab018bdd387f3e9a9ea08\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.yahoo.mobile.client.android.util.rangeseekbar:rangeseekbar-library:0.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7206a2364c92ad7420aa2801d23b3653\jetified-rangeseekbar-library-0.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.yahoo.mobile.client.android.util.rangeseekbar:rangeseekbar-library:0.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7206a2364c92ad7420aa2801d23b3653\jetified-rangeseekbar-library-0.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\8e86a2e4199ce1b363b87d53440c1225\jetified-rangeseekbar-library-0.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\8e86a2e4199ce1b363b87d53440c1225\jetified-rangeseekbar-library-0.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Jay-Goo:RangeSeekBar:v3.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d61e9cb157d0bc6fd65f0386c929e924\jetified-RangeSeekBar-v3.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Jay-Goo:RangeSeekBar:v3.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d61e9cb157d0bc6fd65f0386c929e924\jetified-RangeSeekBar-v3.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d434c3c4c3913d90bafd58a50b7dbe77\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d434c3c4c3913d90bafd58a50b7dbe77\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.sothree.slidinguppanel:library:3.4.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9fde9a06304aef18ca296bb249e1f68c\jetified-library-3.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.sothree.slidinguppanel:library:3.4.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9fde9a06304aef18ca296bb249e1f68c\jetified-library-3.4.0\AndroidManifest.xml:7:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69e5596492027192e37bf5071e3e87df\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69e5596492027192e37bf5071e3e87df\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\66636426f88a1a84b724030fba8eb337\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\66636426f88a1a84b724030fba8eb337\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\19e3e91e54661b13fbed1b1626741399\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\19e3e91e54661b13fbed1b1626741399\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6db4d9f79dad506fa1d9d40dbe7a4ef5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6db4d9f79dad506fa1d9d40dbe7a4ef5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7b5fe970bf4f3baaac8387104a5cd994\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7b5fe970bf4f3baaac8387104a5cd994\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9ad48b01881c0dc232e88568898d040c\jetified-glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9ad48b01881c0dc232e88568898d040c\jetified-glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\2378eefde504afa76bccb0fc4e8f229a\navigation-fragment-ktx-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\2378eefde504afa76bccb0fc4e8f229a\navigation-fragment-ktx-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\579ea0100f43c2caa8ac06d2a15a3a3f\navigation-fragment-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\579ea0100f43c2caa8ac06d2a15a3a3f\navigation-fragment-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7134705df49317a517b9a78790b12ef6\jetified-fragment-ktx-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7134705df49317a517b9a78790b12ef6\jetified-fragment-ktx-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\39a304c46e9b0c44e2e34da0e793b3fa\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\39a304c46e9b0c44e2e34da0e793b3fa\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\794a1765be9a87ed14806ac7d4399971\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\794a1765be9a87ed14806ac7d4399971\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1a7e292c1f38905d97ce868afe6ce3a7\jetified-firebase-installations-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1a7e292c1f38905d97ce868afe6ce3a7\jetified-firebase-installations-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ff1ecc5bcde7da9f7c104359030e9f5e\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ff1ecc5bcde7da9f7c104359030e9f5e\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e8e9f82c021a342510945d90fb5762bf\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e8e9f82c021a342510945d90fb5762bf\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\8a2ea319f6b87f0c01abbfdbd2c4113c\fragment-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\8a2ea319f6b87f0c01abbfdbd2c4113c\fragment-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a3a333b46dfda609fff61d3dd9a5bf3f\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a3a333b46dfda609fff61d3dd9a5bf3f\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\518af5b2c85463dca598e484597a7f41\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\518af5b2c85463dca598e484597a7f41\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3f6b77f36a276d91ecbfbeef3fe85f44\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3f6b77f36a276d91ecbfbeef3fe85f44\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\adf71faf8c5b5a03c62d3cc46b103753\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\adf71faf8c5b5a03c62d3cc46b103753\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ac91b7be8716835e889ca7a0c131bc4f\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ac91b7be8716835e889ca7a0c131bc4f\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b73c71d3b6a5ca8055b1905079a99d26\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b73c71d3b6a5ca8055b1905079a99d26\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\50373fbad98c5bd1249223fb7cffc730\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\50373fbad98c5bd1249223fb7cffc730\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\26cba2260852bf33ca2f3c9de352e92f\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\26cba2260852bf33ca2f3c9de352e92f\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a5c6b469652c07abefbdccc2e54fc216\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a5c6b469652c07abefbdccc2e54fc216\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b271f21983d0ae6482089b1e2f03c850\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b271f21983d0ae6482089b1e2f03c850\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\181986f2b3950a2d1e866d85844ad553\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\181986f2b3950a2d1e866d85844ad553\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4cd9feacc979b5675588a6731a720bc0\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4cd9feacc979b5675588a6731a720bc0\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b0db9684905e3a45fb069f5eb4436c18\navigation-runtime-ktx-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b0db9684905e3a45fb069f5eb4436c18\navigation-runtime-ktx-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1973e60c37e4132f188c52604c5dea8e\navigation-runtime-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1973e60c37e4132f188c52604c5dea8e\navigation-runtime-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\152074e5e51f8f51d6e7a41489c8daea\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\152074e5e51f8f51d6e7a41489c8daea\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1aa7a02fec05d1c160c8f7b2cf95c58f\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1aa7a02fec05d1c160c8f7b2cf95c58f\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a5ca529dbf5008fe39e2ddca88766f04\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a5ca529dbf5008fe39e2ddca88766f04\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a796ca2fb0c1dc309ea939f9a5495a2c\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a796ca2fb0c1dc309ea939f9a5495a2c\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5e5cdda06ebb010105e5e89dad9c08d8\navigation-common-ktx-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5e5cdda06ebb010105e5e89dad9c08d8\navigation-common-ktx-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b3a8eb936c08b8e62c8c2dd31f77a855\jetified-core-ktx-1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b3a8eb936c08b8e62c8c2dd31f77a855\jetified-core-ktx-1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c19c5a7c744bc15adda415373dc6f95d\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c19c5a7c744bc15adda415373dc6f95d\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\40164c3b1df1877dbcc0a4c920aef852\navigation-common-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\40164c3b1df1877dbcc0a4c920aef852\navigation-common-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cb5f1a68a7e4e839474788d2a3991858\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cb5f1a68a7e4e839474788d2a3991858\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6527ada307df92a3dae253492c4b26da\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6527ada307df92a3dae253492c4b26da\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\24bfbd21f934f2251ab25c992e00a982\jetified-sdp-android-1.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\24bfbd21f934f2251ab25c992e00a982\jetified-sdp-android-1.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [it.xabaras.android:recyclerview-swipedecorator:1.2.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6ad60ae9d0c4f08420a82a031892f706\jetified-recyclerview-swipedecorator-1.2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [it.xabaras.android:recyclerview-swipedecorator:1.2.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\6ad60ae9d0c4f08420a82a031892f706\jetified-recyclerview-swipedecorator-1.2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e943cf680d5de67c3fd2e50e2211cfc1\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e943cf680d5de67c3fd2e50e2211cfc1\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\08c5e9d9bcf975bca54cf6e0428dde3e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\08c5e9d9bcf975bca54cf6e0428dde3e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7db26d8bdce45e3ab8f2610e80a944a6\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7db26d8bdce45e3ab8f2610e80a944a6\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3b64075ae2dc3262c3a71ccb38eeb15a\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3b64075ae2dc3262c3a71ccb38eeb15a\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\36809362fa91448f86e1a3812a66c95d\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\36809362fa91448f86e1a3812a66c95d\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e361a61379681a4fa499e93e381e62d4\jetified-gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e361a61379681a4fa499e93e381e62d4\jetified-gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b6c5e6d98edda09a4bcb9a32fd8f6c8f\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\b6c5e6d98edda09a4bcb9a32fd8f6c8f\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\82b9366a83c2c681b6c7c776900f11b4\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\82b9366a83c2c681b6c7c776900f11b4\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\f24e06449aac34006ab31de9dd5ae6d6\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\f24e06449aac34006ab31de9dd5ae6d6\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cdf144464cf99e44f436f2d415dcd481\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\cdf144464cf99e44f436f2d415dcd481\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e745420478e2d1cdf9f87e9161a0eb1f\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e745420478e2d1cdf9f87e9161a0eb1f\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\035ff0ca1f29ea65c0d91c60d9016502\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\035ff0ca1f29ea65c0d91c60d9016502\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\53e5d520c6a1bfa255ccf515a6fe8e9b\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\53e5d520c6a1bfa255ccf515a6fe8e9b\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\64e617aee1a011785a9a00ca7bc2cfa6\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\64e617aee1a011785a9a00ca7bc2cfa6\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d539d2b80a8ddb8b1462fbb2582ab198\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d539d2b80a8ddb8b1462fbb2582ab198\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1c88fc25b6a43c28c588b4f683ddfaf8\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1c88fc25b6a43c28c588b4f683ddfaf8\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\fe333de83be0ced6862f8cbe57f30ad5\jetified-firebase-encoders-json-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\fe333de83be0ced6862f8cbe57f30ad5\jetified-firebase-encoders-json-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7598ff35e071c179db450b62da7d261c\sqlite-framework-2.3.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\7598ff35e071c179db450b62da7d261c\sqlite-framework-2.3.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.3.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\34ed00927b683038df5ac875ad19f8ca\sqlite-2.3.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.3.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\34ed00927b683038df5ac875ad19f8ca\sqlite-2.3.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\77da4f8808824988eda80d8f8d03ba4f\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\77da4f8808824988eda80d8f8d03ba4f\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\498634f30852ca8ff1d73b867f0e5f9e\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\498634f30852ca8ff1d73b867f0e5f9e\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ba1d05a7a073b29bb9b0488374fbcfcf\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ba1d05a7a073b29bb9b0488374fbcfcf\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\abec826891949eeb26b29443d075076d\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\abec826891949eeb26b29443d075076d\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\0db118f3a392759edeb95f8b12838a6a\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\0db118f3a392759edeb95f8b12838a6a\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5938735097a2e20e0beb8cc32259ddf1\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5938735097a2e20e0beb8cc32259ddf1\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e6445de2815037da64aed35e7e784902\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e6445de2815037da64aed35e7e784902\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\66578d29837d0137b488cb1e46754ab0\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\66578d29837d0137b488cb1e46754ab0\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\2ab158a2af39cbd60c632d9a3d3f8ad5\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\2ab158a2af39cbd60c632d9a3d3f8ad5\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\141b894bd90c5eef03898647a4190fcc\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\141b894bd90c5eef03898647a4190fcc\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\ElMoled\app\src\main\AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:9:9-17:20
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:31:9-39:20
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:31:9-39:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\08c5e9d9bcf975bca54cf6e0428dde3e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\08c5e9d9bcf975bca54cf6e0428dde3e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:13:13-31
+	android:authorities
+		ADDED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:11:13-68
+	android:exported
+		ADDED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:10:13-67
+meta-data#net.danlew.android.joda.JodaTimeInitializer
+ADDED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:14:13-16:52
+	android:value
+		ADDED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:16:17-49
+	android:name
+		ADDED from [net.danlew:android.joda:2.10.9.1] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\83bc3ee816dfcdc1dfb4cbcbecad223c\jetified-android.joda-2.10.9.1\AndroidManifest.xml:15:17-75
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:7:5-9:47
+	android:protectionLevel
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:9:9-44
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:8:9-63
+permission#com.elmoledmol.www.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:7:5-9:47
+	android:protectionLevel
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:9:9-44
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:8:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:11:22-76
+uses-permission#com.elmoledmol.www.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:11:22-76
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:17:5-82
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:17:22-79
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:18:5-68
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c3e083030ba54bd341c3eec889a85b62\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:25:5-68
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:18:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:23:5-66
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:23:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:29:5-81
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:27:5-81
+MERGED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:29:22-78
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:31:5-86
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:31:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:32:5-87
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:32:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:33:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:34:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:35:5-88
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:35:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:36:5-92
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:36:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:37:5-84
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:37:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:38:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:38:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:39:5-91
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:39:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:40:5-92
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:40:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:41:5-93
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:41:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:43:5-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:43:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:44:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:44:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:45:5-88
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:45:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:46:5-89
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:46:22-86
+receiver#com.onesignal.FCMBroadcastReceiver
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:49:9-59:20
+	android:permission
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:51:13-73
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:50:13-62
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:54:13-58:29
+	android:priority
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:54:28-50
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.elmoledmol.www
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:54:13-58:29
+	android:priority
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:54:28-50
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:55:17-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:55:25-78
+category#${applicationId}
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:57:17-61
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:57:27-58
+category#com.elmoledmol.www
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:57:17-61
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:57:27-58
+service#com.onesignal.HmsMessageServiceOneSignal
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:61:9-67:19
+	android:exported
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:63:13-37
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:62:13-68
+intent-filter#action:name:com.huawei.push.action.MESSAGING_EVENT
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:64:13-66:29
+action#com.huawei.push.action.MESSAGING_EVENT
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:65:17-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:65:25-78
+activity#com.onesignal.NotificationOpenedActivityHMS
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:69:9-76:20
+	android:noHistory
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:71:13-37
+	android:theme
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:72:13-72
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:70:13-71
+intent-filter#action:name:android.intent.action.VIEW
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:73:13-75:29
+action#android.intent.action.VIEW
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:74:17-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:74:25-66
+service#com.onesignal.FCMIntentService
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:78:9-66
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:78:18-63
+service#com.onesignal.FCMIntentJobService
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:79:9-81:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:81:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:80:13-61
+service#com.onesignal.FocusDelaySyncService
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:82:9-84:43
+	android:stopWithTask
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:84:13-40
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:83:13-63
+service#com.onesignal.FocusDelaySyncJobService
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:85:9-87:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:87:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:86:13-66
+service#com.onesignal.SyncService
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:88:9-90:43
+	android:stopWithTask
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:90:13-40
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:89:13-53
+service#com.onesignal.SyncJobService
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:91:9-93:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:93:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:92:13-56
+activity#com.onesignal.PermissionsActivity
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:95:9-97:75
+	android:theme
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:97:13-72
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:96:13-61
+receiver#com.onesignal.NotificationDismissReceiver
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:99:9-78
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:99:19-75
+receiver#com.onesignal.BootUpReceiver
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:100:9-105:20
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:100:19-62
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:101:13-104:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:102:17-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:102:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:103:17-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:103:25-79
+receiver#com.onesignal.UpgradeReceiver
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:106:9-110:20
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:106:19-63
+intent-filter#action:name:android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:107:13-109:29
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:108:17-84
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:108:25-81
+activity#com.onesignal.NotificationOpenedReceiver
+ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:112:9-115:75
+	android:noHistory
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:114:13-37
+	android:theme
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:115:13-72
+	android:name
+		ADDED from [com.onesignal:OneSignal:4.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\92e475b05f1282d1d19beec301bc1759\jetified-OneSignal-4.3.0\AndroidManifest.xml:113:13-68
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:13-34:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:33:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:33:25-75
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:36:9-42:19
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:38:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:37:13-84
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9a32f5f00a80af7bddf2cd720249c161\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:21.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\be60a12f4e682631c39b9a6771e9f850\jetified-firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\60e6c1da5efc5394fe6930dbede84587\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-identifier:17.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\1ff15eca45c6d6e609f2714ecb44cc26\jetified-play-services-ads-identifier-17.1.0\AndroidManifest.xml:23:22-76
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\c9e2fcce195c00a2a4d77a71136cf5b9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4a33dc998fa9624b48c8413020112691\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\9e101addf9153dac0a5391c82370c1f7\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\ebcbea33201b4fda4135ededb4486c32\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:28:5-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:28:22-74
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:36:13-38:52
+	android:value
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:38:17-49
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:37:17-68
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:41:9-47:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:44:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:45:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:46:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:47:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:43:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:42:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:48:9-54:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:51:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:52:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:53:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:54:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:50:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:49:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:55:9-61:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:58:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:59:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:60:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:61:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:57:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:56:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:63:9-68:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:66:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:67:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:68:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:65:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:64:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:69:9-79:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:72:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:73:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:74:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:71:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:70:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:75:13-78:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:76:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:76:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:77:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:77:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:80:9-90:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:83:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:84:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:85:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:82:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:81:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:86:13-89:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:87:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:87:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:88:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:88:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:91:9-101:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:94:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:95:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:96:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:93:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:92:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:97:13-100:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:98:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:98:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:99:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:99:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:102:9-111:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:105:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:106:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:107:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:104:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:103:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:108:13-110:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:109:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:109:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:112:9-123:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:115:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:116:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:117:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:114:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:113:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:118:13-122:29
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:120:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:120:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:121:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:121:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:124:9-133:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:127:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:128:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:129:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:126:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:125:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:130:13-132:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:131:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:131:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:134:9-144:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:137:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:138:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:139:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:140:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:136:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:135:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:141:13-143:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:142:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.0-alpha02] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\5ca304da5d089abe6875621c1bf928af\work-runtime-2.8.0-alpha02\AndroidManifest.xml:142:25-85
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\69596665a1e8cf6f5f3c86f20704aae1\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\20693ccfb1688d52462b9b239159dc7f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\22a8b77ddff7fa79ac36b9648271aaab\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.4.0-rc01] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\751aa821e946c484b5ad85fe134cfd59\room-runtime-2.4.0-rc01\AndroidManifest.xml:26:13-74
