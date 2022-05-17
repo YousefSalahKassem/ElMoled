@@ -50,14 +50,14 @@ public class newsadapter extends RecyclerView.Adapter<newsadapter.mh> {
         if (list.get(position).getPercentage() == 0) {
             holder.linearLayout.setVisibility(View.GONE);
             holder.offer.setVisibility(View.GONE);
-            holder.price.setText("EGP "+list.get(position).getPrice());
+            holder.price.setText("$ "+list.get(position).getPrice());
 
         } else {
             holder.linearLayout.setVisibility(View.VISIBLE);
             holder.offer.setVisibility(View.VISIBLE);
             holder.percent.setText(list.get(position).getPercentage()+"%");
-            holder.price.setText("EGP "+x);
-            holder.hiddenprice.setText("EGP "+list.get(position).getPrice());
+            holder.price.setText("$ "+x);
+            holder.hiddenprice.setText("$ "+list.get(position).getPrice());
         }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

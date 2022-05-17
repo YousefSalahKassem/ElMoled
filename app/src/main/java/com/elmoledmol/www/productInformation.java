@@ -121,7 +121,7 @@ public class productInformation extends AppCompatActivity {
         String img = intent.getStringExtra("imgNameList");
         String myimage2=intent.getStringExtra("image");
         name.setText(productName);
-        price.setText("EGP " + price2);
+        price.setText("$ " + price2);
         ratingBar.setRating((float) rate);
         Bundle bundle = new Bundle();
         bundle.putInt("id", mainId);

@@ -37,18 +37,18 @@ public class featuredadapter extends RecyclerView.Adapter<featuredadapter.mh> {
     public void onBindViewHolder(@NonNull mh holder, int position) {
         Picasso.get().load(list.get(position).getImagemodel()).into(holder.imagemodel);
         holder.product.setText(list.get(position).getProduct());
-        holder.price.setText("EGP " + String.valueOf(list.get(position).getPrice()));
+        holder.price.setText("$ " + String.valueOf(list.get(position).getPrice()));
         float x = list.get(position).getPrice() * (100 - list.get(position).percentage) / 100;
         if (list.get(position).getPercentage() == 0) {
             holder.linearLayout.setVisibility(View.GONE);
             holder.offer.setVisibility(View.GONE);
-            holder.price.setText("EGP " + String.valueOf(list.get(position).getPrice()));
+            holder.price.setText("$ " + String.valueOf(list.get(position).getPrice()));
         } else {
             holder.linearLayout.setVisibility(View.VISIBLE);
             holder.offer.setVisibility(View.VISIBLE);
             holder.percent.setText(String.valueOf(list.get(position).getPercentage() + "%"));
-            holder.price.setText("EGP " + String.valueOf(x));
-            holder.hiddenprice.setText("EGP " + String.valueOf(list.get(position).getPrice()));
+            holder.price.setText("$ " + String.valueOf(x));
+            holder.hiddenprice.setText("$ " + String.valueOf(list.get(position).getPrice()));
         }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

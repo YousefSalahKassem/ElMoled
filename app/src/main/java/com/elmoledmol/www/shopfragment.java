@@ -123,9 +123,9 @@ public class shopfragment extends Fragment {
 
 
 
-        itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-        itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-        itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+        itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+        itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+        itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
         categories.setLayoutManager(new GridLayoutManager(getContext(), 2, RecyclerView.VERTICAL, false));
         ParentItemAdapter parentItemAdapter = new ParentItemAdapter(itemList);
         categories.setAdapter(parentItemAdapter);
@@ -168,26 +168,26 @@ public class shopfragment extends Fragment {
                     if (textView.getText().toString().equals("MEN")) {
                         if (items.get(position).equals("Top")) {
                             showtext.setText("Top");
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));
                             }
                         } else if (items.get(position).equals("Pants")) {
                             showtext.setText("Pants");
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));
                             }
                         } else if (items.get(position).equals("Shoes")) {
                             showtext.setText("Shoes");
 
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
 
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));
@@ -196,28 +196,28 @@ public class shopfragment extends Fragment {
                     } else if (textView.getText().toString().equals("WOMEN")) {
                         if (items.get(position).equals("Top")) {
                             showtext.setText("Top");
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));
                             }
                         } else if (items.get(position).equals("Pants")) {
                             showtext.setText("Pants");
 
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));
                             }
                         } else if (items.get(position).equals("Shoes")) {
                             showtext.setText("Shoes");
 
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
 
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));
@@ -226,27 +226,27 @@ public class shopfragment extends Fragment {
                     } else if (textView.getText().toString().equals("CHILDREN")) {
                         if (items.get(position).equals("Top")) {
                             showtext.setText("Top");
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));
                             }
                         } else if (items.get(position).equals("Pants")) {
                             showtext.setText("Pants");
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));
                             }
                         } else if (items.get(position).equals("Shoes")) {
                             showtext.setText("Shoes");
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
-                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "EGP 699.00", "EGP 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "2%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
+                            itemList.add(new ChildItem(R.drawable.brand1, R.drawable.model1, "1%", "Pink Jacket", "$ 699.00", "$ 999.00"));
 
                             for (int i = 0; i < itemList.size(); i++) {
                                 test2.add(itemList.get(i));

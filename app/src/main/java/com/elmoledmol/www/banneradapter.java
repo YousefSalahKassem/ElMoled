@@ -18,7 +18,7 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 
-public class banneradapter extends RecyclerView.Adapter<banneradapter.mh> {
+public class     banneradapter extends RecyclerView.Adapter<banneradapter.mh> {
     List<String> list;
     Context context;
 
